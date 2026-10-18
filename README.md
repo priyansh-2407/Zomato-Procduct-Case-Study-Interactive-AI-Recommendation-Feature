@@ -8,23 +8,23 @@ A comprehensive, interactive Product Management case study analyzing Zomato's fo
 
 ---
 
-## ⚠️ Data Integrity Disclaimer
+## Data Integrity Disclaimer
 
 This project uses **five types of data**, each clearly labeled:
 
 | Type | Description |
 |------|-------------|
-| 🟢 **Public Data** | Verified from Eternal/Zomato filings, investor presentations, exchange disclosures |
-| 🔵 **Industry Research** | From reputable financial publications and credible research reports |
-| 🟣 **Observable** | Publicly observable product behavior (pricing, features, UI) |
-| 🟡 **Assumption** | Explicitly labeled illustrative assumptions for modeling |
-| 🟠 **Synthetic** | Generated datasets for analysis — does NOT represent Zomato internal data |
+| **Public Data** | Verified from Eternal/Zomato filings, investor presentations, exchange disclosures |
+| **Industry Research** | From reputable financial publications and credible research reports |
+| **Observable** | Publicly observable product behavior (pricing, features, UI) |
+| **Assumption** | Explicitly labeled illustrative assumptions for modeling |
+| **Synthetic** | Generated datasets for analysis — does NOT represent Zomato internal data |
 
 **No Zomato internal data was accessed or fabricated.**
 
 ---
 
-## 📋 Problem Statement
+## Problem Statement
 
 **Central Business Question:**
 > "How can Zomato increase profitable food-order frequency among existing users without becoming overly dependent on discounts?"
@@ -34,7 +34,7 @@ Users often open Zomato without knowing what they want. With 300K+ restaurant pa
 
 ---
 
-## 🔍 Research Methodology
+## Research Methodology
 
 1. **Public company data** from Eternal FY25 Annual Report, Q1 FY26 Shareholders' Letter
 2. **Industry research** on food delivery economics, market share, and competition
@@ -44,7 +44,7 @@ Users often open Zomato without knowing what they want. With 300K+ restaurant pa
 
 ---
 
-## 📊 Key Findings
+## Key Findings
 
 ### Zomato Business Context
 - **22.9M** monthly transacting users (Q1 FY26)
@@ -72,7 +72,7 @@ Discovery friction scored highest due to:
 
 ---
 
-## ✨ Solution: Too Maaa Zooo
+## Solution: Too Maaa Zooo
 
 > "You don't need to know what you want. We do."
 
@@ -106,7 +106,7 @@ Final Score = Σ (weight_i × score_i) / Σ weight_i
 
 ---
 
-## 💰 Unit Economics (Illustrative)
+## Unit Economics (Illustrative)
 
 **Per-Order Economics:**
 - Revenue/order: ~₹139 (commission + delivery fee + platform fee + ads)
@@ -122,7 +122,7 @@ Final Score = Σ (weight_i × score_i) / Σ weight_i
 
 ---
 
-## 🧪 A/B Test Design
+## A/B Test Design
 
 - **Control:** Current Zomato discovery
 - **Treatment:** Current + Too Maaa Zooo
@@ -134,7 +134,7 @@ Final Score = Σ (weight_i × score_i) / Σ weight_i
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 zomato-pm-case-study/
@@ -175,7 +175,7 @@ zomato-pm-case-study/
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 ### Interactive Website (No setup required)
 ```bash
@@ -197,7 +197,7 @@ jupyter notebook analysis/
 
 ---
 
-## 🎯 What This Project Demonstrates
+## What This Project Demonstrates
 
 1. **Product Thinking** — Problem → Research → Data → Insight → Solution
 2. **Quantitative Rigor** — Unit economics, funnel analysis, segmentation, A/B testing
@@ -208,7 +208,7 @@ jupyter notebook analysis/
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 - All datasets are synthetic — they model realistic distributions but are not actual Zomato data
 - Financial assumptions are illustrative — actual Zomato economics may differ significantly
@@ -218,7 +218,7 @@ jupyter notebook analysis/
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 - Production ML-based recommendation model (collaborative filtering + content-based)
 - Real-time restaurant availability integration
@@ -228,7 +228,7 @@ jupyter notebook analysis/
 
 ---
 
-## 📚 Sources
+## Sources
 
 All sources are documented in [docs/sources.md](docs/sources.md) and in the interactive website's Sources section.
 
@@ -240,7 +240,7 @@ Key sources include:
 
 ---
 
-## 👤 About
+## About
 
 Built by an IIT Ropar engineering student for Product Management campus recruitment preparation.
 
