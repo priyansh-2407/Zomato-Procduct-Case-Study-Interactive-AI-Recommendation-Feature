@@ -1,0 +1,501 @@
+restaurant_id,restaurant_name,city,cuisine,rating,review_count,avg_order_value,distance,avg_prep_time,avg_delivery_time,eta_reliability,availability,price_segment,discount_rate,ad_spend
+R0001,The Kitchen 1,Delhi NCR,North Indian,3.3,112,292,8.7,22,28,0.74,0.97,Mid-Range,12,179
+R0002,Blue Hub 2,Mumbai,South Indian,4.1,133,189,5.5,18,18,0.9,0.78,Budget,10,228
+R0003,Red Corner 3,Bangalore,Chinese,3.6,308,410,0.9,22,8,0.77,0.97,Mid-Range,14,1239
+R0004,The Table 4,Hyderabad,Italian,4.2,97,238,4.7,12,18,0.81,0.96,Budget,10,543
+R0005,Spice Bites 5,Pune,Japanese,5.0,144,276,7.9,28,27,0.97,0.96,Budget,6,109
+R0006,Hot Cafe 6,Chennai,Mexican,4.5,210,200,3.1,26,14,0.87,0.87,Budget,7,810
+R0007,Royal Grill 7,Kolkata,Burgers,4.2,538,250,1.2,17,8,0.94,0.89,Budget,11,32
+R0008,Green Hub 8,Jaipur,Pizza,4.3,205,244,6.6,27,21,0.83,0.91,Budget,20,411
+R0009,Modern Treats 9,Ahmedabad,Biryani,5.0,282,285,1.5,10,13,0.92,0.87,Mid-Range,13,215
+R0010,Royal Table 10,Lucknow,Desserts,3.4,538,330,1.2,15,8,0.89,0.94,Mid-Range,9,1538
+R0011,Green Table 11,Delhi NCR,Continental,4.6,918,627,1.5,14,11,0.97,0.95,Premium,0,714
+R0012,Hot Hub 12,Mumbai,Thai,4.0,150,306,3.7,28,14,0.87,0.91,Mid-Range,5,2675
+R0013,Cool Bites 13,Bangalore,Korean,3.9,186,613,0.9,22,10,0.79,0.81,Premium,7,273
+R0014,Blue Kitchen 14,Hyderabad,Street Food,3.1,278,278,2.8,23,16,0.76,0.92,Budget,12,500
+R0015,Fresh Diner 15,Pune,Healthy Bowls,3.5,679,350,2.3,10,14,0.86,0.75,Mid-Range,7,192
+R0016,Grand Box 16,Chennai,Wraps & Rolls,3.9,127,432,4.2,28,14,0.84,0.78,Mid-Range,13,1573
+R0017,New Point 17,Kolkata,Cafe,4.4,363,218,2.8,11,17,0.97,0.9,Budget,11,214
+R0018,Grand House 18,Jaipur,Bakery,4.2,893,475,7.9,22,21,0.83,0.96,Mid-Range,9,6
+R0019,Spice Bistro 19,Ahmedabad,North Indian,4.0,483,234,2.6,24,12,0.84,0.92,Budget,17,945
+R0020,The Dhaba 20,Lucknow,South Indian,3.3,341,300,4.0,15,14,0.89,0.84,Mid-Range,13,748
+R0021,Little Treats 21,Delhi NCR,Chinese,5.0,328,322,7.4,15,19,0.97,0.79,Mid-Range,14,2308
+R0022,Blue Cafe 22,Mumbai,Italian,3.9,223,506,9.3,18,31,0.94,0.95,Premium,2,486
+R0023,Cool Table 23,Bangalore,Japanese,3.4,335,874,7.1,21,19,0.84,0.98,Premium,1,730
+R0024,The Bistro 24,Hyderabad,Mexican,3.6,527,778,7.2,17,21,0.89,0.94,Premium,6,2444
+R0025,Spice Table 25,Pune,Burgers,4.6,458,434,8.1,27,23,0.9,0.77,Mid-Range,8,27
+R0026,Silver Treats 26,Chennai,Pizza,3.9,337,343,6.1,10,17,0.91,0.83,Mid-Range,1,553
+R0027,Little Bites 27,Kolkata,Biryani,4.2,92,291,5.5,20,21,0.92,0.97,Mid-Range,7,292
+R0028,Green Grill 28,Jaipur,Desserts,3.3,162,376,1.2,10,15,0.87,0.91,Mid-Range,6,142
+R0029,Golden Hub 29,Ahmedabad,Continental,4.1,515,235,3.2,29,17,0.89,0.89,Budget,13,142
+R0030,Silver Grill 30,Lucknow,Thai,3.1,527,283,1.6,10,8,0.85,0.91,Mid-Range,7,77
+R0031,Red House 31,Delhi NCR,Korean,3.3,248,367,6.4,22,18,0.79,0.89,Mid-Range,7,1456
+R0032,Big Box 32,Mumbai,Street Food,3.8,121,295,6.6,10,22,0.92,0.88,Mid-Range,5,773
+R0033,Cool Dhaba 33,Bangalore,Healthy Bowls,4.2,239,491,9.1,13,23,0.82,0.75,Mid-Range,1,861
+R0034,Fresh Dhaba 34,Hyderabad,Wraps & Rolls,3.9,196,259,0.7,26,8,0.8,0.91,Budget,17,1049
+R0035,Little Point 35,Pune,Cafe,3.6,125,445,8.2,29,24,0.82,0.93,Mid-Range,5,2002
+R0036,Blue Grill 36,Chennai,Bakery,4.3,268,800,7.7,12,27,0.89,0.94,Premium,2,2258
+R0037,Fusion Express 37,Kolkata,North Indian,3.8,1119,489,5.9,22,20,0.82,0.83,Mid-Range,10,1046
+R0038,Urban Hub 38,Jaipur,South Indian,3.6,599,300,5.2,11,19,0.83,0.95,Mid-Range,5,93
+R0039,Fresh Bar 39,Ahmedabad,Chinese,4.2,98,160,7.2,11,25,0.92,0.77,Budget,6,2157
+R0040,Big Box 40,Lucknow,Italian,4.6,236,458,9.5,29,30,0.9,0.77,Mid-Range,11,613
+R0041,Urban Hub 41,Delhi NCR,Japanese,3.7,279,292,1.6,12,13,0.89,0.88,Mid-Range,14,352
+R0042,Grand Cafe 42,Mumbai,Mexican,3.9,783,179,9.7,10,32,0.79,0.95,Budget,15,2478
+R0043,Red Cafe 43,Bangalore,Burgers,4.1,329,231,7.1,19,24,0.89,0.96,Budget,5,164
+R0044,Grand Bistro 44,Hyderabad,Pizza,3.9,847,682,6.4,15,19,0.86,0.83,Premium,4,80
+R0045,Blue Grill 45,Pune,Biryani,2.9,603,773,2.0,28,15,0.85,0.92,Premium,4,541
+R0046,Green Bites 46,Chennai,Desserts,4.1,790,518,0.8,17,13,0.96,0.78,Premium,4,479
+R0047,Grand Point 47,Kolkata,Continental,4.0,286,665,3.1,11,18,0.92,0.98,Premium,7,810
+R0048,Classic Bistro 48,Jaipur,Thai,4.0,1101,466,2.8,19,11,0.94,0.89,Mid-Range,3,835
+R0049,Cool Corner 49,Ahmedabad,Korean,3.5,441,394,7.8,20,27,0.84,0.88,Mid-Range,13,387
+R0050,Blue Corner 50,Lucknow,Street Food,3.7,67,248,6.4,24,19,0.79,0.75,Budget,12,445
+R0051,Red Table 51,Delhi NCR,Healthy Bowls,4.3,218,393,7.9,17,25,0.95,0.97,Mid-Range,2,1958
+R0052,Urban Box 52,Mumbai,Wraps & Rolls,3.8,164,381,9.8,19,27,0.88,0.81,Mid-Range,1,103
+R0053,Desi Diner 53,Bangalore,Cafe,3.3,200,266,5.0,23,16,0.76,0.76,Budget,8,163
+R0054,Desi Bistro 54,Hyderabad,Bakery,4.1,93,165,4.9,14,17,0.88,0.91,Budget,5,803
+R0055,Little Hub 55,Pune,North Indian,4.3,569,320,2.5,17,13,0.91,0.83,Mid-Range,6,1032
+R0056,New Plate 56,Chennai,South Indian,3.6,158,242,9.0,20,27,0.78,0.85,Budget,15,138
+R0057,Classic Grill 57,Kolkata,Chinese,3.8,195,177,3.6,12,19,0.87,0.91,Budget,20,345
+R0058,Golden House 58,Jaipur,Italian,3.9,334,226,7.6,18,21,0.83,0.83,Budget,17,422
+R0059,New Express 59,Ahmedabad,Japanese,3.9,155,302,2.0,14,10,0.81,0.82,Mid-Range,2,1703
+R0060,Hot Treats 60,Lucknow,Mexican,4.0,327,203,9.8,12,27,0.95,0.95,Budget,21,149
+R0061,Spice Bistro 61,Delhi NCR,Burgers,4.2,358,224,3.2,25,12,0.86,0.85,Budget,15,138
+R0062,Big Treats 62,Mumbai,Pizza,4.0,398,187,6.0,13,20,0.88,0.76,Budget,11,72
+R0063,Cool Plate 63,Bangalore,Biryani,3.6,455,248,6.2,19,20,0.81,0.96,Budget,21,1676
+R0064,Blue Table 64,Hyderabad,Desserts,4.3,544,271,2.2,11,15,0.91,0.94,Budget,7,793
+R0065,Royal House 65,Pune,Continental,3.7,649,236,5.5,17,23,0.83,0.94,Budget,13,236
+R0066,Urban Box 66,Chennai,Thai,3.7,183,444,5.3,14,22,0.83,0.88,Mid-Range,13,734
+R0067,Grand House 67,Kolkata,Korean,4.0,206,168,8.0,22,25,0.93,0.93,Budget,8,186
+R0068,Silver Diner 68,Jaipur,Street Food,4.2,558,154,5.9,25,23,0.86,0.94,Budget,7,936
+R0069,Fresh Bar 69,Ahmedabad,Healthy Bowls,4.5,122,179,7.4,24,24,0.94,0.87,Budget,10,212
+R0070,Royal Box 70,Lucknow,Wraps & Rolls,3.7,897,225,4.3,19,21,0.79,0.88,Budget,15,472
+R0071,Modern Express 71,Delhi NCR,Cafe,4.8,1045,241,1.9,21,13,0.92,0.92,Budget,23,1298
+R0072,Modern House 72,Mumbai,Bakery,4.2,104,496,8.5,12,29,0.95,0.87,Mid-Range,8,381
+R0073,Silver Plate 73,Bangalore,North Indian,4.4,63,193,4.3,20,20,0.88,0.83,Budget,19,300
+R0074,Fusion Point 74,Hyderabad,South Indian,3.6,266,168,2.2,19,12,0.9,0.83,Budget,16,500
+R0075,New Dhaba 75,Pune,Chinese,3.4,1166,169,4.4,11,21,0.82,0.89,Budget,6,693
+R0076,Fresh Table 76,Chennai,Italian,4.2,895,176,2.3,10,13,0.9,0.77,Budget,20,301
+R0077,Modern Kitchen 77,Kolkata,Japanese,2.9,322,314,2.2,27,16,0.76,0.81,Mid-Range,9,394
+R0078,Fusion Palace 78,Jaipur,Mexican,3.3,112,243,6.8,10,20,0.77,0.9,Budget,5,54
+R0079,Classic Kitchen 79,Ahmedabad,Burgers,4.2,159,301,2.8,24,17,0.94,0.84,Mid-Range,10,172
+R0080,The Dhaba 80,Lucknow,Pizza,3.4,831,151,1.3,14,7,0.77,0.88,Budget,13,1115
+R0081,Silver Hub 81,Delhi NCR,Biryani,3.3,218,736,3.0,22,14,0.82,0.85,Premium,2,2965
+R0082,Golden Hub 82,Mumbai,Desserts,3.5,109,471,5.1,27,21,0.82,0.76,Mid-Range,4,585
+R0083,Desi Grill 83,Bangalore,Continental,3.6,684,496,5.5,13,18,0.76,0.96,Mid-Range,1,644
+R0084,Spice Bowl 84,Hyderabad,Thai,3.7,341,234,8.4,14,21,0.79,0.96,Budget,22,454
+R0085,Spice Table 85,Pune,Korean,3.4,897,372,4.1,20,13,0.77,0.92,Mid-Range,1,693
+R0086,New Corner 86,Chennai,Street Food,4.2,240,187,3.9,24,15,0.9,0.86,Budget,18,1380
+R0087,Classic Table 87,Kolkata,Healthy Bowls,4.2,79,389,6.2,16,23,0.82,0.77,Mid-Range,10,513
+R0088,Fresh Box 88,Jaipur,Wraps & Rolls,3.1,245,334,8.3,25,27,0.76,0.89,Mid-Range,5,72
+R0089,Modern Treats 89,Ahmedabad,Cafe,3.2,318,849,7.5,26,25,0.84,0.95,Premium,1,672
+R0090,Hot Point 90,Lucknow,Bakery,3.8,1614,272,0.9,24,14,0.8,0.88,Budget,23,17
+R0091,Urban Point 91,Delhi NCR,North Indian,4.1,1345,487,5.0,27,21,0.85,0.94,Mid-Range,0,680
+R0092,Silver Bistro 92,Mumbai,South Indian,3.8,103,160,7.1,16,24,0.78,0.82,Budget,15,782
+R0093,Little Bar 93,Bangalore,Chinese,4.3,414,180,0.7,27,6,0.95,0.87,Budget,23,801
+R0094,Modern Bar 94,Hyderabad,Italian,4.0,214,806,4.3,19,18,0.93,0.98,Premium,6,540
+R0095,The Hub 95,Pune,Japanese,3.5,97,358,3.2,15,13,0.76,0.75,Mid-Range,14,418
+R0096,Red Grill 96,Chennai,Mexican,4.3,480,328,9.5,25,24,0.88,0.95,Mid-Range,14,472
+R0097,Grand Kitchen 97,Kolkata,Burgers,4.5,331,330,2.2,14,10,0.95,0.83,Mid-Range,0,2607
+R0098,Desi Table 98,Jaipur,Pizza,4.7,1064,897,2.2,17,15,0.96,0.79,Premium,6,254
+R0099,Red Bites 99,Ahmedabad,Biryani,5.0,403,161,8.8,15,23,0.98,0.97,Budget,22,829
+R0100,Red Kitchen 100,Lucknow,Desserts,4.4,359,299,4.4,17,15,0.94,0.86,Mid-Range,1,186
+R0101,Spice Cafe 101,Delhi NCR,Continental,2.2,325,461,3.8,23,17,0.69,0.95,Mid-Range,11,805
+R0102,Red Grill 102,Mumbai,Thai,3.5,753,783,8.5,23,27,0.85,0.92,Premium,1,2127
+R0103,Golden Palace 103,Bangalore,Korean,3.7,535,564,8.3,26,25,0.77,0.82,Premium,4,3973
+R0104,Spice Plate 104,Hyderabad,Street Food,3.5,161,419,5.6,25,17,0.87,0.87,Mid-Range,14,313
+R0105,Red Box 105,Pune,Healthy Bowls,4.0,85,346,7.2,11,24,0.85,0.89,Mid-Range,0,1539
+R0106,Classic Point 106,Chennai,Wraps & Rolls,4.1,1318,799,1.7,25,8,0.8,0.82,Premium,3,1471
+R0107,Urban Corner 107,Kolkata,Cafe,3.0,1985,373,4.8,13,20,0.82,0.8,Mid-Range,1,855
+R0108,Desi Bites 108,Jaipur,Bakery,3.7,169,489,1.9,18,16,0.83,0.9,Mid-Range,5,240
+R0109,Classic Hub 109,Ahmedabad,North Indian,4.3,157,585,0.8,23,9,0.95,0.86,Premium,7,205
+R0110,Classic Diner 110,Lucknow,South Indian,3.8,588,808,8.5,25,27,0.79,0.76,Premium,7,958
+R0111,Green House 111,Delhi NCR,Chinese,3.4,102,430,4.6,14,18,0.75,0.88,Mid-Range,4,1197
+R0112,The Diner 112,Mumbai,Italian,3.9,276,151,1.2,17,11,0.88,0.82,Budget,18,983
+R0113,Little Diner 113,Bangalore,Japanese,3.9,98,333,9.9,12,28,0.88,0.91,Mid-Range,8,7
+R0114,Hot Bar 114,Hyderabad,Mexican,3.6,310,161,3.8,10,13,0.82,0.78,Budget,16,584
+R0115,Golden House 115,Pune,Burgers,3.7,97,754,7.2,10,26,0.77,0.87,Premium,5,2047
+R0116,Golden Bistro 116,Chennai,Pizza,3.7,625,354,8.2,11,28,0.85,0.94,Mid-Range,6,773
+R0117,Grand House 117,Kolkata,Biryani,3.7,79,334,2.0,27,10,0.92,0.83,Mid-Range,2,1169
+R0118,Red Point 118,Jaipur,Desserts,4.0,307,402,7.3,14,27,0.95,0.9,Mid-Range,2,855
+R0119,Green Table 119,Ahmedabad,Continental,4.4,544,246,4.5,16,16,0.98,0.76,Budget,22,432
+R0120,Cool Corner 120,Lucknow,Thai,3.8,515,387,8.8,28,25,0.82,0.89,Mid-Range,13,177
+R0121,Hot Express 121,Delhi NCR,Korean,4.6,115,437,9.1,13,25,0.98,0.79,Mid-Range,12,508
+R0122,Blue Bar 122,Mumbai,Street Food,4.3,815,207,5.4,17,20,0.84,0.84,Budget,24,149
+R0123,Red Grill 123,Bangalore,Healthy Bowls,4.5,115,493,4.8,14,15,0.86,0.87,Mid-Range,5,1324
+R0124,Cool Table 124,Hyderabad,Wraps & Rolls,3.5,155,415,7.2,13,20,0.76,0.92,Mid-Range,9,482
+R0125,The Cafe 125,Pune,Cafe,4.1,796,582,1.6,15,8,0.88,0.97,Premium,0,130
+R0126,Urban Kitchen 126,Chennai,Bakery,4.5,1080,349,5.3,10,16,0.98,0.97,Mid-Range,0,2274
+R0127,Spice Hub 127,Kolkata,North Indian,3.8,315,387,6.8,12,18,0.82,0.91,Mid-Range,3,839
+R0128,Fresh Diner 128,Jaipur,South Indian,4.4,97,769,4.7,27,15,0.93,0.94,Premium,7,1149
+R0129,Classic Bowl 129,Ahmedabad,Chinese,4.4,375,286,9.3,23,29,0.86,0.9,Mid-Range,5,790
+R0130,Green Bistro 130,Lucknow,Italian,4.1,448,279,1.0,29,10,0.94,0.93,Budget,16,670
+R0131,Golden Express 131,Delhi NCR,Japanese,3.1,421,823,7.7,25,23,0.85,0.78,Premium,4,5
+R0132,Big Kitchen 132,Mumbai,Mexican,3.4,212,201,7.1,17,22,0.78,0.84,Budget,9,38
+R0133,Big Box 133,Bangalore,Burgers,4.4,292,363,8.7,20,26,0.83,0.83,Mid-Range,5,381
+R0134,Cool Stop 134,Hyderabad,Pizza,4.7,353,413,7.8,26,26,0.98,0.75,Mid-Range,2,5
+R0135,Hot Table 135,Pune,Biryani,3.8,985,293,9.4,17,24,0.85,0.81,Mid-Range,4,275
+R0136,Classic Corner 136,Chennai,Desserts,4.1,341,624,6.3,24,19,0.86,0.78,Premium,1,1142
+R0137,Green Stop 137,Kolkata,Continental,4.8,106,223,2.9,29,14,0.98,0.88,Budget,5,501
+R0138,Green Cafe 138,Jaipur,Thai,4.0,391,827,8.9,14,24,0.89,0.84,Premium,6,2302
+R0139,Desi Table 139,Ahmedabad,Korean,4.3,179,460,4.5,23,14,0.91,0.85,Mid-Range,8,137
+R0140,Golden Palace 140,Lucknow,Street Food,3.5,741,327,1.4,10,12,0.85,0.88,Mid-Range,3,371
+R0141,Golden Cafe 141,Delhi NCR,Healthy Bowls,4.1,113,432,4.3,18,19,0.91,0.98,Mid-Range,1,82
+R0142,Desi Bowl 142,Mumbai,Wraps & Rolls,3.9,367,340,1.3,11,14,0.81,0.82,Mid-Range,3,328
+R0143,Modern Plate 143,Bangalore,Cafe,3.5,612,180,5.6,27,21,0.84,0.82,Budget,11,553
+R0144,Fresh Cafe 144,Hyderabad,Bakery,3.9,446,723,7.4,19,20,0.87,0.97,Premium,1,1171
+R0145,Modern Grill 145,Pune,North Indian,3.4,261,248,3.8,23,18,0.89,0.8,Budget,12,82
+R0146,Fresh Grill 146,Chennai,South Indian,3.9,993,715,8.5,20,26,0.8,0.92,Premium,1,1749
+R0147,Fusion Grill 147,Kolkata,Chinese,3.4,208,299,9.4,21,26,0.81,0.85,Mid-Range,9,543
+R0148,Red Bistro 148,Jaipur,Italian,3.5,294,896,8.6,14,29,0.77,0.94,Premium,3,2103
+R0149,The Bites 149,Ahmedabad,Japanese,4.2,193,532,4.3,13,19,0.86,0.97,Premium,5,1728
+R0150,Red Bites 150,Lucknow,Mexican,4.2,785,269,5.1,22,21,0.83,0.87,Budget,12,79
+R0151,Fusion Cafe 151,Delhi NCR,Burgers,4.2,267,348,5.3,18,16,0.91,0.8,Mid-Range,9,787
+R0152,Fusion Grill 152,Mumbai,Pizza,3.9,80,251,4.9,11,22,0.79,0.91,Budget,24,136
+R0153,Hot Bites 153,Bangalore,Biryani,3.7,94,239,1.1,20,15,0.9,0.89,Budget,11,488
+R0154,Desi Plate 154,Hyderabad,Desserts,3.5,248,308,8.9,18,24,0.81,0.85,Mid-Range,12,992
+R0155,Grand Box 155,Pune,Continental,3.9,292,284,3.0,25,12,0.87,0.8,Mid-Range,0,207
+R0156,Green Palace 156,Chennai,Thai,3.8,631,883,5.1,12,19,0.85,0.94,Premium,0,669
+R0157,Red Box 157,Kolkata,Korean,4.5,303,198,4.2,19,19,0.97,0.97,Budget,20,189
+R0158,Big Corner 158,Jaipur,Street Food,3.5,255,336,8.5,10,29,0.82,0.9,Mid-Range,9,1691
+R0159,Silver Bar 159,Ahmedabad,Healthy Bowls,3.6,312,313,7.5,20,25,0.76,0.77,Mid-Range,10,56
+R0160,Grand Grill 160,Lucknow,Wraps & Rolls,4.0,63,274,7.5,17,22,0.85,0.93,Budget,18,102
+R0161,Royal Bar 161,Delhi NCR,Cafe,4.0,579,184,0.7,11,14,0.84,0.93,Budget,17,240
+R0162,Fusion Bites 162,Mumbai,Bakery,3.5,101,229,7.9,22,25,0.76,0.97,Budget,20,173
+R0163,The Grill 163,Bangalore,North Indian,4.6,583,824,6.7,12,21,0.98,0.8,Premium,2,565
+R0164,Urban Point 164,Hyderabad,South Indian,4.8,427,487,2.8,12,12,0.98,0.9,Mid-Range,4,1269
+R0165,Modern Box 165,Pune,Chinese,4.3,289,836,7.4,25,25,0.84,0.88,Premium,7,2770
+R0166,New Dhaba 166,Chennai,Italian,3.5,119,167,7.4,26,21,0.83,0.94,Budget,19,390
+R0167,Spice Hub 167,Kolkata,Japanese,3.0,328,431,8.8,22,28,0.74,0.86,Mid-Range,0,212
+R0168,Little Stop 168,Jaipur,Mexican,3.9,1774,301,4.3,26,15,0.87,0.92,Mid-Range,9,156
+R0169,Fresh Bar 169,Ahmedabad,Burgers,4.0,61,447,0.8,24,8,0.94,0.83,Mid-Range,4,120
+R0170,Urban Stop 170,Lucknow,Pizza,4.6,853,279,4.0,18,18,0.98,0.89,Budget,12,266
+R0171,Fusion Plate 171,Delhi NCR,Biryani,4.5,98,409,5.1,22,15,0.92,0.88,Mid-Range,8,693
+R0172,Royal Table 172,Mumbai,Desserts,3.6,626,339,8.3,19,22,0.77,0.83,Mid-Range,11,922
+R0173,Silver House 173,Bangalore,Continental,2.5,101,352,4.6,11,15,0.77,0.92,Mid-Range,14,2028
+R0174,New Box 174,Hyderabad,Thai,4.3,263,419,8.0,12,24,0.95,0.84,Mid-Range,8,664
+R0175,The House 175,Pune,Korean,3.2,63,153,8.4,15,25,0.77,0.97,Budget,10,280
+R0176,Urban Corner 176,Chennai,Street Food,3.3,681,574,8.1,19,25,0.76,0.77,Premium,5,686
+R0177,Blue Stop 177,Kolkata,Healthy Bowls,4.4,125,414,1.8,25,13,0.98,0.77,Mid-Range,0,248
+R0178,Fusion Point 178,Jaipur,Wraps & Rolls,4.3,166,267,2.9,15,16,0.89,0.93,Budget,6,334
+R0179,Grand Point 179,Ahmedabad,Cafe,4.0,249,195,9.0,10,28,0.94,0.88,Budget,23,26
+R0180,Blue Plate 180,Lucknow,Bakery,3.3,158,440,9.8,15,29,0.77,0.88,Mid-Range,6,2681
+R0181,Classic Box 181,Delhi NCR,North Indian,3.5,113,329,2.9,27,15,0.83,0.78,Mid-Range,12,962
+R0182,Golden Grill 182,Mumbai,South Indian,3.7,490,220,1.3,19,11,0.79,0.97,Budget,21,552
+R0183,Hot Box 183,Bangalore,Chinese,4.8,366,293,5.4,26,19,0.86,0.93,Mid-Range,3,224
+R0184,Golden Kitchen 184,Hyderabad,Italian,3.4,193,248,5.4,14,22,0.88,0.95,Budget,9,300
+R0185,Grand Corner 185,Pune,Japanese,3.9,915,715,5.2,12,20,0.91,0.84,Premium,6,3337
+R0186,Blue Express 186,Chennai,Mexican,3.5,312,187,8.0,21,26,0.88,0.84,Budget,23,380
+R0187,Cool Table 187,Kolkata,Burgers,4.4,203,261,9.1,15,31,0.84,0.8,Budget,8,1122
+R0188,Hot Table 188,Jaipur,Pizza,4.2,120,376,6.3,11,24,0.93,0.87,Mid-Range,14,405
+R0189,Royal House 189,Ahmedabad,Biryani,4.5,130,852,4.6,13,14,0.92,0.87,Premium,5,2209
+R0190,Spice Corner 190,Lucknow,Desserts,4.6,559,174,8.7,26,26,0.95,0.82,Budget,14,861
+R0191,Urban Cafe 191,Delhi NCR,Continental,3.9,687,353,2.2,24,16,0.8,0.81,Mid-Range,2,320
+R0192,Little Bites 192,Mumbai,Thai,2.8,501,423,6.4,17,24,0.77,0.98,Mid-Range,9,101
+R0193,Urban Corner 193,Bangalore,Korean,4.5,88,318,8.6,14,28,0.87,0.9,Mid-Range,10,539
+R0194,Hot Corner 194,Hyderabad,Street Food,3.3,136,154,3.4,23,19,0.87,0.93,Budget,20,546
+R0195,Golden Stop 195,Pune,Healthy Bowls,4.0,355,164,4.7,19,21,0.88,0.84,Budget,24,58
+R0196,Little Cafe 196,Chennai,Wraps & Rolls,4.2,75,442,9.2,15,30,0.85,0.96,Mid-Range,11,1225
+R0197,Little Point 197,Kolkata,Cafe,4.3,183,263,1.6,24,12,0.83,0.81,Budget,5,316
+R0198,Red House 198,Jaipur,Bakery,3.6,374,188,3.3,24,11,0.9,0.95,Budget,18,449
+R0199,Little Table 199,Ahmedabad,North Indian,4.3,73,733,10.0,27,29,0.82,0.94,Premium,4,122
+R0200,Hot Treats 200,Lucknow,South Indian,3.6,894,236,8.4,27,26,0.84,0.85,Budget,11,285
+R0201,New Hub 201,Delhi NCR,Chinese,4.3,276,413,6.5,21,23,0.85,0.87,Mid-Range,1,364
+R0202,Fresh Express 202,Mumbai,Italian,4.0,439,489,6.2,24,21,0.89,0.77,Mid-Range,3,336
+R0203,Hot Kitchen 203,Bangalore,Japanese,3.8,135,414,3.2,14,15,0.77,0.75,Mid-Range,3,28
+R0204,Fresh Palace 204,Hyderabad,Mexican,2.9,189,254,5.9,20,19,0.85,0.84,Budget,6,479
+R0205,Hot Hub 205,Pune,Burgers,4.0,805,214,7.2,29,20,0.83,0.84,Budget,13,264
+R0206,Blue Express 206,Chennai,Pizza,2.8,459,743,3.4,26,19,0.83,0.75,Premium,5,52
+R0207,The Bistro 207,Kolkata,Biryani,4.0,477,164,4.1,19,16,0.81,0.85,Budget,20,36
+R0208,Golden Bowl 208,Jaipur,Desserts,3.6,209,272,6.9,23,21,0.85,0.75,Budget,17,1222
+R0209,Red Point 209,Ahmedabad,Continental,4.1,106,478,1.1,20,8,0.8,0.85,Mid-Range,4,499
+R0210,Cool Dhaba 210,Lucknow,Thai,4.2,76,307,5.8,16,22,0.91,0.94,Mid-Range,10,421
+R0211,Silver Hub 211,Delhi NCR,Korean,3.4,588,378,8.1,26,28,0.89,0.85,Mid-Range,4,654
+R0212,Red Kitchen 212,Mumbai,Street Food,3.4,370,435,7.0,17,20,0.81,0.78,Mid-Range,13,318
+R0213,Green Bistro 213,Bangalore,Healthy Bowls,3.9,420,194,1.2,18,9,0.89,0.89,Budget,12,122
+R0214,Grand Box 214,Hyderabad,Wraps & Rolls,3.8,272,775,1.8,19,8,0.85,0.97,Premium,3,39
+R0215,Spice Box 215,Pune,Cafe,3.4,64,248,4.9,15,22,0.76,0.97,Budget,11,1096
+R0216,Little Plate 216,Chennai,Bakery,3.7,672,496,3.2,29,14,0.83,0.83,Mid-Range,8,125
+R0217,Big Table 217,Kolkata,North Indian,4.7,746,376,3.4,15,13,0.86,0.83,Mid-Range,4,2545
+R0218,Grand Kitchen 218,Jaipur,South Indian,4.0,212,407,1.8,18,13,0.87,0.84,Mid-Range,14,1592
+R0219,The Box 219,Ahmedabad,Chinese,4.9,150,366,0.9,19,11,0.9,0.97,Mid-Range,13,960
+R0220,Fresh Bites 220,Lucknow,Italian,4.5,826,308,8.0,12,27,0.87,0.95,Mid-Range,14,120
+R0221,Blue Cafe 221,Delhi NCR,Japanese,3.9,769,409,4.1,15,14,0.9,0.84,Mid-Range,7,508
+R0222,The Treats 222,Mumbai,Mexican,4.1,788,495,4.4,26,19,0.89,0.97,Mid-Range,3,86
+R0223,Hot Dhaba 223,Bangalore,Burgers,4.5,900,524,8.9,18,26,0.93,0.96,Premium,0,647
+R0224,Grand Diner 224,Hyderabad,Pizza,3.8,512,432,1.8,15,11,0.9,0.81,Mid-Range,3,2367
+R0225,Fusion Plate 225,Pune,Biryani,3.6,62,245,8.4,24,22,0.88,0.93,Budget,18,726
+R0226,The Bistro 226,Chennai,Desserts,4.3,412,535,5.1,11,18,0.88,0.77,Premium,2,117
+R0227,Desi Point 227,Kolkata,Continental,3.9,185,530,5.3,25,21,0.79,0.77,Premium,3,349
+R0228,Blue Cafe 228,Jaipur,Thai,4.2,180,254,9.3,18,30,0.86,0.86,Budget,9,511
+R0229,Hot Kitchen 229,Ahmedabad,Korean,3.1,402,549,8.9,20,26,0.81,0.89,Premium,0,1147
+R0230,Modern Table 230,Lucknow,Street Food,4.5,531,256,8.1,21,25,0.85,0.93,Budget,10,343
+R0231,Green Dhaba 231,Delhi NCR,Healthy Bowls,4.1,79,247,3.5,10,16,0.81,0.81,Budget,19,32
+R0232,Hot Grill 232,Mumbai,Wraps & Rolls,3.4,58,598,7.5,16,20,0.8,0.81,Premium,6,375
+R0233,Grand Treats 233,Bangalore,Cafe,3.8,910,363,9.7,11,29,0.85,0.84,Mid-Range,9,912
+R0234,Grand House 234,Hyderabad,Bakery,4.4,128,242,6.8,29,24,0.97,0.91,Budget,10,55
+R0235,Silver Plate 235,Pune,North Indian,3.7,214,490,5.3,18,19,0.8,0.83,Mid-Range,5,40
+R0236,Silver Diner 236,Chennai,South Indian,4.0,253,460,8.6,14,27,0.87,0.95,Mid-Range,3,849
+R0237,Grand Bistro 237,Kolkata,Chinese,3.5,420,442,3.5,22,15,0.86,0.8,Mid-Range,13,254
+R0238,Silver Table 238,Jaipur,Italian,3.7,78,304,5.4,15,22,0.77,0.84,Mid-Range,5,14
+R0239,New Point 239,Ahmedabad,Japanese,3.8,241,219,6.2,10,21,0.93,0.87,Budget,18,186
+R0240,Hot Bistro 240,Lucknow,Mexican,2.6,523,394,9.8,12,24,0.8,0.94,Mid-Range,1,231
+R0241,Fresh Treats 241,Delhi NCR,Burgers,4.4,332,195,4.0,10,15,0.93,0.97,Budget,21,11
+R0242,Desi Stop 242,Mumbai,Pizza,3.5,584,812,4.9,17,17,0.76,0.8,Premium,1,661
+R0243,Big Table 243,Bangalore,Biryani,3.6,1158,487,8.0,29,25,0.91,0.77,Mid-Range,5,191
+R0244,Royal Stop 244,Hyderabad,Desserts,3.9,113,230,7.9,21,21,0.91,0.9,Budget,12,560
+R0245,Silver Point 245,Pune,Continental,4.2,185,211,9.0,24,23,0.83,0.75,Budget,17,296
+R0246,Hot Bites 246,Chennai,Thai,3.8,1180,218,2.8,20,16,0.79,0.81,Budget,21,307
+R0247,Fusion Palace 247,Kolkata,Korean,3.6,120,378,2.5,10,16,0.91,0.93,Mid-Range,12,207
+R0248,Cool Bar 248,Jaipur,Street Food,3.9,136,880,10.0,24,32,0.87,0.81,Premium,3,900
+R0249,Cool Point 249,Ahmedabad,Healthy Bowls,4.0,135,253,9.1,28,30,0.87,0.97,Budget,20,88
+R0250,Modern Bowl 250,Lucknow,Wraps & Rolls,3.9,511,334,6.6,23,19,0.87,0.93,Mid-Range,7,9
+R0251,Fresh Grill 251,Delhi NCR,Cafe,4.2,154,232,2.6,16,16,0.92,0.77,Budget,13,14
+R0252,Silver Plate 252,Mumbai,Bakery,3.8,442,306,3.2,17,18,0.93,0.76,Mid-Range,11,348
+R0253,Fusion Palace 253,Bangalore,North Indian,4.0,1144,406,3.9,25,14,0.88,0.83,Mid-Range,9,206
+R0254,Spice Hub 254,Hyderabad,South Indian,4.0,961,163,5.3,14,15,0.8,0.79,Budget,22,165
+R0255,Silver Hub 255,Pune,Chinese,3.1,344,706,7.7,15,23,0.86,0.97,Premium,7,543
+R0256,Green Corner 256,Chennai,Italian,4.9,314,389,2.4,21,11,0.92,0.95,Mid-Range,3,55
+R0257,Royal Cafe 257,Kolkata,Japanese,3.9,246,255,8.4,16,27,0.91,0.9,Budget,8,1043
+R0258,Red Bowl 258,Jaipur,Mexican,4.3,183,373,0.9,12,12,0.81,0.85,Mid-Range,7,42
+R0259,Fusion Grill 259,Ahmedabad,Burgers,3.5,181,592,0.5,24,13,0.79,0.9,Premium,5,1886
+R0260,Cool Diner 260,Lucknow,Pizza,3.4,180,351,7.3,26,21,0.8,0.96,Mid-Range,12,3142
+R0261,Desi Point 261,Delhi NCR,Biryani,4.6,471,297,5.7,24,17,0.96,0.88,Mid-Range,14,32
+R0262,Big Bowl 262,Mumbai,Desserts,3.0,358,188,7.3,25,20,0.79,0.87,Budget,12,1350
+R0263,Big Hub 263,Bangalore,Continental,4.4,291,868,7.1,24,26,0.87,0.94,Premium,1,423
+R0264,New Kitchen 264,Hyderabad,Thai,4.4,1490,261,7.2,24,23,0.97,0.86,Budget,12,88
+R0265,The Diner 265,Pune,Korean,3.5,65,464,0.6,24,13,0.82,0.8,Mid-Range,10,1274
+R0266,Red Express 266,Chennai,Street Food,4.6,1351,291,5.3,24,22,0.87,0.93,Mid-Range,8,378
+R0267,Modern Bar 267,Kolkata,Healthy Bowls,3.3,751,237,8.1,15,26,0.83,0.94,Budget,23,6
+R0268,Golden Table 268,Jaipur,Wraps & Rolls,3.4,74,400,3.2,16,14,0.84,0.83,Mid-Range,10,388
+R0269,Red House 269,Ahmedabad,Cafe,3.5,252,239,3.7,11,15,0.9,0.9,Budget,18,500
+R0270,Cool Corner 270,Lucknow,Bakery,4.4,262,247,1.5,15,10,0.89,0.98,Budget,6,365
+R0271,Cool Plate 271,Delhi NCR,North Indian,4.7,527,204,3.8,17,14,0.88,0.86,Budget,10,169
+R0272,Urban Treats 272,Mumbai,South Indian,3.6,1260,412,1.2,11,15,0.81,0.77,Mid-Range,8,732
+R0273,Grand Bar 273,Bangalore,Chinese,4.5,415,348,3.1,21,18,0.98,0.77,Mid-Range,2,2171
+R0274,Fusion Plate 274,Hyderabad,Italian,4.4,859,324,6.1,24,22,0.89,0.75,Mid-Range,8,218
+R0275,Hot Table 275,Pune,Japanese,3.8,706,321,6.9,29,19,0.78,0.85,Mid-Range,1,1034
+R0276,Cool Express 276,Chennai,Mexican,4.1,266,603,4.6,24,14,0.89,0.89,Premium,5,277
+R0277,Classic Bar 277,Kolkata,Burgers,4.1,65,334,2.5,15,11,0.81,0.86,Mid-Range,10,699
+R0278,Blue Hub 278,Jaipur,Pizza,4.2,91,489,8.5,26,28,0.96,0.88,Mid-Range,3,719
+R0279,Blue Plate 279,Ahmedabad,Biryani,4.0,85,361,9.2,21,27,0.83,0.83,Mid-Range,13,823
+R0280,Classic Hub 280,Lucknow,Desserts,4.8,295,418,2.9,24,14,0.92,0.9,Mid-Range,14,49
+R0281,Blue Bar 281,Delhi NCR,Continental,3.7,65,620,5.3,11,19,0.91,0.77,Premium,6,527
+R0282,Spice Stop 282,Mumbai,Thai,3.0,154,315,2.0,11,10,0.82,0.95,Mid-Range,12,866
+R0283,Red Box 283,Bangalore,Korean,3.4,155,216,5.6,17,19,0.87,0.93,Budget,11,1225
+R0284,Grand Palace 284,Hyderabad,Street Food,3.3,189,641,5.3,28,22,0.75,0.84,Premium,4,699
+R0285,Urban Grill 285,Pune,Healthy Bowls,4.1,719,261,7.6,18,25,0.82,0.9,Budget,8,592
+R0286,New Corner 286,Chennai,Wraps & Rolls,4.3,107,171,0.5,24,11,0.9,0.79,Budget,6,9
+R0287,Red Bistro 287,Kolkata,Cafe,3.8,213,163,2.6,20,15,0.81,0.76,Budget,12,133
+R0288,New Point 288,Jaipur,Bakery,4.1,1226,230,5.8,18,20,0.88,0.91,Budget,19,94
+R0289,Spice Diner 289,Ahmedabad,North Indian,4.4,432,397,1.6,22,9,0.88,0.78,Mid-Range,10,173
+R0290,Hot Palace 290,Lucknow,South Indian,3.8,859,324,5.3,18,15,0.9,0.77,Mid-Range,7,616
+R0291,Urban Bar 291,Delhi NCR,Chinese,3.4,60,439,5.6,26,22,0.88,0.86,Mid-Range,5,1176
+R0292,Hot Cafe 292,Mumbai,Italian,4.3,135,468,8.9,19,23,0.88,0.93,Mid-Range,13,170
+R0293,Green Diner 293,Bangalore,Japanese,3.8,335,275,1.1,22,7,0.83,0.93,Budget,13,2935
+R0294,Big Bites 294,Hyderabad,Mexican,4.4,205,328,3.8,17,13,0.88,0.86,Mid-Range,10,801
+R0295,Royal Bites 295,Pune,Burgers,3.8,60,456,7.8,20,21,0.9,0.88,Mid-Range,11,1044
+R0296,Big Bowl 296,Chennai,Pizza,5.0,348,556,6.9,22,24,0.9,0.79,Premium,7,1386
+R0297,Royal Dhaba 297,Kolkata,Biryani,4.2,448,855,6.0,22,18,0.88,0.91,Premium,2,225
+R0298,Silver Bistro 298,Jaipur,Desserts,4.6,166,177,4.5,28,18,0.87,0.77,Budget,18,241
+R0299,Hot Table 299,Ahmedabad,Continental,4.5,181,776,3.0,28,16,0.88,0.81,Premium,1,1186
+R0300,Urban Treats 300,Lucknow,Thai,4.2,391,184,6.8,26,24,0.93,0.79,Budget,6,600
+R0301,Red Bowl 301,Delhi NCR,Korean,3.7,163,287,8.9,14,27,0.77,0.9,Mid-Range,4,1711
+R0302,Red Box 302,Mumbai,Street Food,3.9,199,860,10.0,26,31,0.82,0.88,Premium,0,99
+R0303,Hot Bowl 303,Bangalore,Healthy Bowls,4.5,677,843,10.0,14,25,0.9,0.78,Premium,0,446
+R0304,Royal Bistro 304,Hyderabad,Wraps & Rolls,3.5,345,348,6.7,14,18,0.87,0.89,Mid-Range,11,29
+R0305,Grand Bistro 305,Pune,Cafe,4.4,425,845,6.1,21,25,0.94,0.85,Premium,5,493
+R0306,Fresh Bar 306,Chennai,Bakery,4.9,415,270,9.3,16,27,0.9,0.98,Budget,24,524
+R0307,New Treats 307,Kolkata,North Indian,4.2,80,681,6.9,23,21,0.96,0.79,Premium,4,1174
+R0308,Urban Kitchen 308,Jaipur,South Indian,4.7,461,340,2.0,22,13,0.87,0.91,Mid-Range,6,826
+R0309,Big Bites 309,Ahmedabad,Chinese,4.2,500,835,8.1,29,25,0.88,0.84,Premium,1,850
+R0310,Desi Kitchen 310,Lucknow,Italian,4.6,1023,225,6.1,17,17,0.84,0.85,Budget,6,466
+R0311,Spice Diner 311,Delhi NCR,Japanese,4.1,146,845,8.9,13,28,0.84,0.93,Premium,7,30
+R0312,New Bar 312,Mumbai,Mexican,4.3,420,889,4.9,26,15,0.87,0.77,Premium,7,1698
+R0313,Fresh Cafe 313,Bangalore,Burgers,3.6,140,591,5.0,15,15,0.78,0.78,Premium,7,1424
+R0314,Blue Bistro 314,Hyderabad,Pizza,3.8,263,611,8.1,16,23,0.81,0.78,Premium,2,439
+R0315,Grand Point 315,Pune,Biryani,3.7,204,470,2.0,11,12,0.81,0.88,Mid-Range,12,110
+R0316,Cool Palace 316,Chennai,Desserts,4.1,315,311,6.4,15,21,0.81,0.86,Mid-Range,4,1296
+R0317,Grand Bistro 317,Kolkata,Continental,3.3,493,224,6.8,25,25,0.78,0.87,Budget,21,2275
+R0318,Blue Diner 318,Jaipur,Thai,2.7,202,578,5.1,24,19,0.76,0.94,Premium,2,1964
+R0319,Blue Grill 319,Ahmedabad,Korean,3.6,557,307,2.4,29,11,0.85,0.88,Mid-Range,7,776
+R0320,Classic Kitchen 320,Lucknow,Street Food,2.9,317,198,6.8,12,23,0.73,0.81,Budget,9,100
+R0321,Urban Cafe 321,Delhi NCR,Healthy Bowls,4.1,1332,728,1.9,17,15,0.86,0.77,Premium,4,1865
+R0322,Little Hub 322,Mumbai,Wraps & Rolls,3.8,126,428,2.6,14,17,0.81,0.81,Mid-Range,0,1534
+R0323,Spice Cafe 323,Bangalore,Cafe,4.6,124,380,3.8,11,16,0.98,0.76,Mid-Range,4,174
+R0324,Royal Hub 324,Hyderabad,Bakery,4.2,935,210,4.9,25,16,0.88,0.85,Budget,16,3861
+R0325,Green Kitchen 325,Pune,North Indian,4.5,132,286,2.4,16,13,0.93,0.96,Mid-Range,7,521
+R0326,Fusion Corner 326,Chennai,South Indian,3.7,70,221,4.7,26,15,0.77,0.85,Budget,9,25
+R0327,Red Corner 327,Kolkata,Chinese,4.0,177,318,4.1,26,16,0.91,0.78,Mid-Range,11,202
+R0328,Classic House 328,Jaipur,Italian,3.5,345,484,4.2,11,13,0.88,0.87,Mid-Range,11,200
+R0329,Desi Point 329,Ahmedabad,Japanese,4.2,173,229,6.9,16,25,0.96,0.95,Budget,19,162
+R0330,Cool Box 330,Lucknow,Mexican,4.0,1249,151,7.3,24,24,0.95,0.82,Budget,11,41
+R0331,Little Express 331,Delhi NCR,Burgers,3.5,677,485,2.3,17,17,0.76,0.77,Mid-Range,2,678
+R0332,Fusion Treats 332,Mumbai,Pizza,3.3,1223,208,5.3,14,19,0.84,0.92,Budget,20,431
+R0333,The Express 333,Bangalore,Biryani,4.2,81,502,2.5,23,13,0.87,0.95,Premium,7,2398
+R0334,Silver House 334,Hyderabad,Desserts,4.2,490,185,2.3,13,12,0.87,0.94,Budget,7,663
+R0335,Desi Kitchen 335,Pune,Continental,3.9,185,411,4.6,13,15,0.87,0.96,Mid-Range,5,990
+R0336,Silver Bites 336,Chennai,Thai,3.0,939,460,5.9,23,23,0.77,0.83,Mid-Range,0,1313
+R0337,Big Bistro 337,Kolkata,Korean,4.0,284,547,9.8,14,25,0.89,0.92,Premium,0,1075
+R0338,Green Grill 338,Jaipur,Street Food,3.4,93,317,5.9,15,24,0.87,0.98,Mid-Range,3,2623
+R0339,Desi Hub 339,Ahmedabad,Healthy Bowls,3.7,77,432,4.9,14,19,0.81,0.88,Mid-Range,5,1301
+R0340,The Stop 340,Lucknow,Wraps & Rolls,3.8,287,640,3.9,26,15,0.81,0.77,Premium,3,658
+R0341,Fusion House 341,Delhi NCR,Cafe,3.6,632,829,4.2,19,15,0.91,0.78,Premium,7,1151
+R0342,Desi Cafe 342,Mumbai,Bakery,3.2,66,384,4.4,13,19,0.88,0.88,Mid-Range,10,53
+R0343,Little Table 343,Bangalore,North Indian,4.0,1063,425,1.2,17,11,0.85,0.94,Mid-Range,12,709
+R0344,Hot Dhaba 344,Hyderabad,South Indian,3.4,157,303,3.9,18,18,0.85,0.77,Mid-Range,5,150
+R0345,Spice Plate 345,Pune,Chinese,3.3,772,222,2.7,20,16,0.89,0.8,Budget,22,1361
+R0346,Grand Kitchen 346,Chennai,Italian,3.8,415,751,4.3,25,17,0.88,0.85,Premium,5,1739
+R0347,Hot Bowl 347,Kolkata,Japanese,4.0,729,206,4.1,28,15,0.93,0.86,Budget,15,184
+R0348,The Diner 348,Jaipur,Mexican,4.5,210,288,3.1,10,19,0.98,0.84,Mid-Range,10,318
+R0349,Little Bar 349,Ahmedabad,Burgers,4.6,178,497,0.7,22,11,0.95,0.78,Mid-Range,14,149
+R0350,New Diner 350,Lucknow,Pizza,3.7,146,347,5.7,18,17,0.79,0.85,Mid-Range,11,1711
+R0351,Fresh Plate 351,Delhi NCR,Biryani,3.5,63,236,6.2,13,19,0.75,0.94,Budget,24,72
+R0352,Blue Treats 352,Mumbai,Desserts,3.8,776,270,4.5,11,14,0.87,0.84,Budget,5,437
+R0353,Urban Bowl 353,Bangalore,Continental,3.6,71,226,4.3,29,17,0.8,0.91,Budget,10,1172
+R0354,Cool Diner 354,Hyderabad,Thai,4.4,358,291,4.5,26,20,0.86,0.8,Mid-Range,12,1998
+R0355,Desi Box 355,Pune,Korean,2.9,722,160,2.5,25,10,0.78,0.85,Budget,11,250
+R0356,Grand Hub 356,Chennai,Street Food,3.6,118,405,8.2,25,22,0.78,0.81,Mid-Range,5,393
+R0357,Spice Box 357,Kolkata,Healthy Bowls,4.7,144,421,3.0,27,18,0.89,0.8,Mid-Range,6,206
+R0358,Cool Hub 358,Jaipur,Wraps & Rolls,3.5,660,428,8.3,17,22,0.87,0.83,Mid-Range,10,236
+R0359,Cool Bites 359,Ahmedabad,Cafe,4.2,375,262,3.2,19,16,0.87,0.85,Budget,11,415
+R0360,Fusion Bistro 360,Lucknow,Bakery,4.5,146,873,7.0,26,23,0.95,0.75,Premium,6,40
+R0361,Grand Kitchen 361,Delhi NCR,North Indian,4.2,167,846,1.5,12,15,0.91,0.94,Premium,2,1128
+R0362,Classic Palace 362,Mumbai,South Indian,3.5,376,430,6.0,18,19,0.87,0.8,Mid-Range,10,199
+R0363,Fresh Bowl 363,Bangalore,Chinese,3.5,78,308,6.3,26,17,0.87,0.83,Mid-Range,7,1982
+R0364,Green Dhaba 364,Hyderabad,Italian,4.3,291,151,1.3,15,7,0.92,0.85,Budget,15,95
+R0365,Blue Palace 365,Pune,Japanese,4.0,78,265,6.0,21,21,0.8,0.77,Budget,17,208
+R0366,Blue Treats 366,Chennai,Mexican,3.9,245,557,7.3,15,23,0.89,0.96,Premium,6,1128
+R0367,Blue Table 367,Kolkata,Burgers,3.8,59,339,2.6,23,15,0.87,0.75,Mid-Range,10,293
+R0368,Royal Plate 368,Jaipur,Pizza,4.0,351,355,1.8,11,15,0.94,0.9,Mid-Range,1,385
+R0369,Green Grill 369,Ahmedabad,Biryani,3.7,58,436,3.9,15,12,0.85,0.95,Mid-Range,14,625
+R0370,Red Diner 370,Lucknow,Desserts,4.0,91,400,4.1,22,16,0.83,0.77,Mid-Range,4,76
+R0371,Classic Table 371,Delhi NCR,Continental,3.9,329,263,10.0,21,31,0.83,0.82,Budget,13,558
+R0372,Red Bowl 372,Mumbai,Thai,4.0,195,309,6.5,12,22,0.9,0.91,Mid-Range,11,1546
+R0373,Classic Bar 373,Bangalore,Korean,4.3,136,285,3.2,18,16,0.95,0.8,Mid-Range,1,2482
+R0374,Royal Grill 374,Hyderabad,Street Food,4.6,308,226,5.6,11,16,0.85,0.88,Budget,15,133
+R0375,Silver Hub 375,Pune,Healthy Bowls,4.9,176,347,6.3,27,24,0.96,0.92,Mid-Range,5,768
+R0376,Big Hub 376,Chennai,Wraps & Rolls,3.9,134,434,5.8,17,23,0.79,0.82,Mid-Range,0,1091
+R0377,Silver Bites 377,Kolkata,Cafe,4.5,251,446,4.8,18,22,0.87,0.78,Mid-Range,8,2613
+R0378,Little Bowl 378,Jaipur,Bakery,3.3,77,354,5.3,13,20,0.89,0.85,Mid-Range,5,383
+R0379,Urban Plate 379,Ahmedabad,North Indian,3.8,231,235,4.7,22,14,0.9,0.97,Budget,17,1545
+R0380,Little Diner 380,Lucknow,South Indian,4.4,302,228,6.0,18,19,0.84,0.84,Budget,8,662
+R0381,Urban Palace 381,Delhi NCR,Chinese,3.9,381,263,6.0,16,23,0.87,0.77,Budget,16,1193
+R0382,Little Bar 382,Mumbai,Italian,3.6,179,311,1.9,18,13,0.77,0.97,Mid-Range,11,662
+R0383,Blue Stop 383,Bangalore,Japanese,3.9,414,831,7.9,15,28,0.8,0.95,Premium,7,194
+R0384,Blue Hub 384,Hyderabad,Mexican,3.5,71,369,5.4,21,23,0.86,0.86,Mid-Range,12,2254
+R0385,The Point 385,Pune,Burgers,3.6,106,207,6.6,17,18,0.85,0.96,Budget,12,121
+R0386,Grand House 386,Chennai,Pizza,4.3,78,460,8.4,21,24,0.94,0.88,Mid-Range,12,748
+R0387,Urban Express 387,Kolkata,Biryani,3.1,1110,399,6.2,14,22,0.81,0.79,Mid-Range,0,695
+R0388,Green Point 388,Jaipur,Desserts,4.8,348,329,6.8,11,22,0.88,0.79,Mid-Range,3,366
+R0389,Classic Box 389,Ahmedabad,Continental,4.0,297,199,8.5,12,26,0.8,0.77,Budget,16,417
+R0390,Desi Plate 390,Lucknow,Thai,2.7,314,883,1.0,11,7,0.72,0.87,Premium,5,46
+R0391,Fusion Stop 391,Delhi NCR,Korean,3.7,86,567,1.7,12,12,0.81,0.83,Premium,7,1153
+R0392,The Point 392,Mumbai,Street Food,4.3,118,652,5.8,11,16,0.92,0.9,Premium,3,672
+R0393,Silver Hub 393,Bangalore,Healthy Bowls,4.0,529,349,4.2,14,14,0.82,0.93,Mid-Range,10,593
+R0394,Little Express 394,Hyderabad,Wraps & Rolls,4.2,995,296,3.2,16,17,0.96,0.81,Mid-Range,13,1331
+R0395,Silver Kitchen 395,Pune,Cafe,3.1,1329,173,8.1,16,27,0.79,0.88,Budget,21,815
+R0396,Urban Corner 396,Chennai,Bakery,3.0,74,776,1.8,18,12,0.77,0.87,Premium,7,145
+R0397,Blue Cafe 397,Kolkata,North Indian,3.4,115,488,8.9,28,30,0.78,0.83,Mid-Range,10,495
+R0398,Golden Table 398,Jaipur,South Indian,3.8,214,410,6.0,13,20,0.86,0.88,Mid-Range,3,1016
+R0399,Silver Corner 399,Ahmedabad,Chinese,4.5,372,183,7.1,21,25,0.95,0.89,Budget,14,71
+R0400,Classic House 400,Lucknow,Italian,3.6,245,227,5.4,15,15,0.84,0.82,Budget,19,12
+R0401,Royal Bites 401,Delhi NCR,Japanese,3.5,395,401,4.4,20,20,0.78,0.76,Mid-Range,12,645
+R0402,Silver Bowl 402,Mumbai,Mexican,3.9,383,824,4.6,24,21,0.87,0.79,Premium,2,221
+R0403,Classic Bar 403,Bangalore,Burgers,4.2,385,205,6.3,11,18,0.83,0.87,Budget,9,166
+R0404,Grand Express 404,Hyderabad,Pizza,3.0,606,283,6.7,23,24,0.86,0.75,Mid-Range,2,1629
+R0405,Golden Box 405,Pune,Biryani,4.9,503,484,10.0,24,27,0.98,0.76,Mid-Range,3,1707
+R0406,Classic House 406,Chennai,Desserts,4.3,152,167,8.7,20,27,0.85,0.92,Budget,20,187
+R0407,Spice Bistro 407,Kolkata,Continental,4.2,192,452,7.8,23,28,0.87,0.78,Mid-Range,10,980
+R0408,Classic Grill 408,Jaipur,Thai,4.0,142,390,3.5,18,17,0.91,0.8,Mid-Range,6,235
+R0409,Desi Cafe 409,Ahmedabad,Korean,4.0,225,247,9.0,26,24,0.94,0.84,Budget,11,32
+R0410,New Corner 410,Lucknow,Street Food,3.9,99,334,3.5,26,19,0.83,0.95,Mid-Range,12,1085
+R0411,Desi Stop 411,Delhi NCR,Healthy Bowls,4.1,476,193,5.3,22,19,0.82,0.82,Budget,21,988
+R0412,Spice Hub 412,Mumbai,Wraps & Rolls,4.0,1155,192,6.8,25,25,0.94,0.82,Budget,22,70
+R0413,The Table 413,Bangalore,Cafe,4.3,168,472,2.1,11,14,0.89,0.95,Mid-Range,5,138
+R0414,Hot Treats 414,Hyderabad,Bakery,4.5,360,575,7.3,20,24,0.9,0.94,Premium,6,1235
+R0415,Fusion Treats 415,Pune,North Indian,4.1,493,197,8.9,24,23,0.86,0.95,Budget,5,1627
+R0416,Red Plate 416,Chennai,South Indian,4.4,432,339,2.9,28,13,0.95,0.84,Mid-Range,2,8
+R0417,Big Bar 417,Kolkata,Chinese,3.9,216,355,5.4,18,22,0.86,0.87,Mid-Range,2,3044
+R0418,Cool Stop 418,Jaipur,Italian,4.0,86,236,6.2,18,20,0.92,0.8,Budget,21,523
+R0419,Desi Diner 419,Ahmedabad,Japanese,3.1,519,392,3.5,21,19,0.79,0.96,Mid-Range,5,42
+R0420,Silver Bites 420,Lucknow,Mexican,3.8,250,178,0.5,28,12,0.89,0.79,Budget,7,34
+R0421,Fusion Cafe 421,Delhi NCR,Burgers,3.8,103,392,3.8,17,17,0.89,0.78,Mid-Range,0,3879
+R0422,Fusion House 422,Mumbai,Pizza,4.3,81,174,0.9,17,13,0.87,0.85,Budget,18,355
+R0423,Green Point 423,Bangalore,Biryani,3.8,1649,693,9.9,25,26,0.86,0.98,Premium,6,102
+R0424,Blue Grill 424,Hyderabad,Desserts,4.7,224,281,4.3,14,20,0.9,0.94,Mid-Range,0,275
+R0425,Fresh Hub 425,Pune,Continental,4.0,183,204,4.1,27,20,0.87,0.83,Budget,7,1533
+R0426,Fresh Table 426,Chennai,Thai,3.2,173,188,3.5,13,18,0.75,0.9,Budget,7,36
+R0427,Spice Express 427,Kolkata,Korean,4.1,344,531,9.6,14,31,0.83,0.95,Premium,0,716
+R0428,Royal Diner 428,Jaipur,Street Food,3.7,1016,480,8.3,27,23,0.81,0.82,Mid-Range,5,374
+R0429,Cool Treats 429,Ahmedabad,Healthy Bowls,4.1,127,348,5.3,25,21,0.9,0.79,Mid-Range,8,68
+R0430,Classic Stop 430,Lucknow,Wraps & Rolls,3.5,241,288,3.1,29,18,0.81,0.76,Mid-Range,2,373
+R0431,Golden Hub 431,Delhi NCR,Cafe,4.1,101,892,4.1,25,15,0.9,0.79,Premium,1,2781
+R0432,Silver Stop 432,Mumbai,Bakery,3.6,817,750,8.2,11,24,0.81,0.9,Premium,2,160
+R0433,Cool Grill 433,Bangalore,North Indian,3.7,107,323,2.8,15,15,0.86,0.91,Mid-Range,5,1302
+R0434,Red Box 434,Hyderabad,South Indian,4.5,298,254,2.2,12,16,0.88,0.91,Budget,5,585
+R0435,Desi Point 435,Pune,Chinese,4.0,158,200,1.3,12,9,0.8,0.96,Budget,5,330
+R0436,Hot House 436,Chennai,Italian,3.6,185,270,2.0,29,10,0.88,0.88,Budget,22,403
+R0437,Urban Hub 437,Kolkata,Japanese,3.7,928,352,4.0,25,15,0.92,0.92,Mid-Range,8,1595
+R0438,New Box 438,Jaipur,Mexican,3.7,162,210,2.7,24,17,0.83,0.83,Budget,24,294
+R0439,New Grill 439,Ahmedabad,Burgers,4.2,368,447,8.2,16,24,0.94,0.83,Mid-Range,11,2122
+R0440,Golden Express 440,Lucknow,Pizza,3.8,538,457,8.5,17,22,0.84,0.9,Mid-Range,6,1036
+R0441,Silver Treats 441,Delhi NCR,Biryani,3.3,525,400,2.4,15,15,0.81,0.8,Mid-Range,14,941
+R0442,Desi Stop 442,Mumbai,Desserts,4.1,262,690,9.0,20,28,0.84,0.85,Premium,0,230
+R0443,Cool House 443,Bangalore,Continental,4.3,735,221,2.0,24,13,0.93,0.93,Budget,24,426
+R0444,Cool Stop 444,Hyderabad,Thai,3.3,410,158,9.0,12,25,0.86,0.89,Budget,12,320
+R0445,Big Box 445,Pune,Korean,4.3,94,810,8.6,13,25,0.84,0.91,Premium,4,1008
+R0446,Modern Table 446,Chennai,Street Food,3.7,141,155,3.6,21,19,0.87,0.85,Budget,24,635
+R0447,Classic Bar 447,Kolkata,Healthy Bowls,3.1,73,790,1.7,16,12,0.81,0.89,Premium,1,477
+R0448,Spice Treats 448,Jaipur,Wraps & Rolls,4.0,1320,440,9.3,25,28,0.82,0.9,Mid-Range,9,691
+R0449,Golden Diner 449,Ahmedabad,Cafe,2.9,293,323,8.1,13,21,0.77,0.9,Mid-Range,6,243
+R0450,Grand Treats 450,Lucknow,Bakery,4.1,214,485,9.3,20,26,0.92,0.76,Mid-Range,7,307
+R0451,Blue Kitchen 451,Delhi NCR,North Indian,3.9,540,694,1.3,29,11,0.88,0.8,Premium,3,560
+R0452,Spice Hub 452,Mumbai,South Indian,3.8,97,258,2.8,13,14,0.9,0.76,Budget,16,63
+R0453,Desi Bites 453,Bangalore,Chinese,4.5,176,204,0.9,18,11,0.92,0.83,Budget,11,56
+R0454,Royal Box 454,Hyderabad,Italian,3.8,95,448,9.7,29,31,0.87,0.91,Mid-Range,4,747
+R0455,Desi Cafe 455,Pune,Japanese,4.7,189,349,9.3,11,27,0.98,0.89,Mid-Range,8,215
+R0456,Fresh Bowl 456,Chennai,Mexican,3.8,735,222,5.4,11,15,0.93,0.84,Budget,17,41
+R0457,Modern Bar 457,Kolkata,Burgers,4.0,108,407,7.8,18,27,0.89,0.96,Mid-Range,9,105
+R0458,Blue Express 458,Jaipur,Pizza,4.3,143,268,7.7,23,22,0.84,0.92,Budget,14,127
+R0459,Desi Diner 459,Ahmedabad,Biryani,3.9,284,312,9.9,14,25,0.81,0.93,Mid-Range,6,625
+R0460,Classic Grill 460,Lucknow,Desserts,3.8,70,207,8.3,27,22,0.86,0.96,Budget,12,884
+R0461,Classic Dhaba 461,Delhi NCR,Continental,4.0,222,271,3.1,16,16,0.91,0.96,Budget,9,799
+R0462,Hot Palace 462,Mumbai,Thai,4.1,83,365,3.2,16,19,0.9,0.92,Mid-Range,14,355
+R0463,Grand House 463,Bangalore,Korean,4.4,135,879,2.6,16,16,0.89,0.89,Premium,3,1356
+R0464,Fresh Palace 464,Hyderabad,Street Food,3.8,80,188,5.0,13,17,0.84,0.76,Budget,16,1078
+R0465,Hot Bowl 465,Pune,Healthy Bowls,4.7,270,241,4.4,20,13,0.96,0.9,Budget,5,229
+R0466,Silver Bistro 466,Chennai,Wraps & Rolls,4.4,264,700,9.1,24,27,0.95,0.95,Premium,3,644
+R0467,Urban Cafe 467,Kolkata,Cafe,3.5,332,371,8.8,14,29,0.84,0.76,Mid-Range,14,539
+R0468,Cool Grill 468,Jaipur,Bakery,3.9,285,261,3.4,13,12,0.83,0.93,Budget,14,129
+R0469,Grand Box 469,Ahmedabad,North Indian,4.1,212,278,5.1,13,22,0.87,0.91,Budget,24,25
+R0470,Grand House 470,Lucknow,South Indian,3.8,509,186,2.3,10,9,0.9,0.78,Budget,14,465
+R0471,Big Plate 471,Delhi NCR,Chinese,3.8,330,384,4.2,27,20,0.83,0.89,Mid-Range,13,2453
+R0472,Royal Table 472,Mumbai,Italian,4.4,285,341,9.6,12,28,0.87,0.81,Mid-Range,6,5039
+R0473,Cool Diner 473,Bangalore,Japanese,3.5,114,207,5.3,15,18,0.76,0.82,Budget,24,1447
+R0474,Golden Point 474,Hyderabad,Mexican,4.0,363,268,0.6,26,13,0.8,0.79,Budget,24,385
+R0475,Modern Dhaba 475,Pune,Burgers,3.7,472,245,10.0,15,29,0.85,0.84,Budget,8,1896
+R0476,Fusion Bowl 476,Chennai,Pizza,3.1,284,741,2.7,20,15,0.8,0.98,Premium,4,463
+R0477,Cool Cafe 477,Kolkata,Biryani,3.7,207,374,7.9,19,27,0.86,0.83,Mid-Range,12,204
+R0478,Green Box 478,Jaipur,Desserts,3.3,293,183,0.6,22,10,0.81,0.97,Budget,16,995
+R0479,Urban Corner 479,Ahmedabad,Continental,4.4,386,243,4.0,11,16,0.89,0.95,Budget,9,1701
+R0480,Silver Bar 480,Lucknow,Thai,4.0,162,639,9.0,29,26,0.84,0.87,Premium,5,319
+R0481,Classic House 481,Delhi NCR,Korean,3.1,180,388,3.5,13,14,0.87,0.84,Mid-Range,6,644
+R0482,Royal Treats 482,Mumbai,Street Food,3.3,149,772,7.3,22,20,0.84,0.76,Premium,4,1345
+R0483,Red Express 483,Bangalore,Healthy Bowls,3.8,145,167,9.6,11,25,0.83,0.89,Budget,15,67
+R0484,Silver Table 484,Hyderabad,Wraps & Rolls,4.5,163,177,4.4,24,15,0.89,0.84,Budget,24,1546
+R0485,Royal Table 485,Pune,Cafe,3.3,294,811,8.7,26,25,0.84,0.82,Premium,0,1209
+R0486,Hot Grill 486,Chennai,Bakery,3.5,238,192,7.1,25,21,0.88,0.82,Budget,13,649
+R0487,Red House 487,Kolkata,North Indian,4.4,978,314,7.6,21,22,0.9,0.83,Mid-Range,8,1648
+R0488,Cool House 488,Jaipur,South Indian,4.7,443,394,1.0,14,10,0.9,0.79,Mid-Range,7,292
+R0489,New Bowl 489,Ahmedabad,Chinese,3.4,955,262,7.2,12,25,0.87,0.93,Budget,7,516
+R0490,Silver Plate 490,Lucknow,Italian,3.8,363,758,4.9,20,15,0.88,0.77,Premium,3,346
+R0491,Blue Diner 491,Delhi NCR,Japanese,4.1,635,315,1.5,12,15,0.88,0.86,Mid-Range,1,786
+R0492,Classic Bowl 492,Mumbai,Mexican,3.5,664,750,1.2,12,7,0.79,0.78,Premium,2,486
+R0493,Red Bar 493,Bangalore,Burgers,4.5,526,545,7.5,15,25,0.88,0.98,Premium,2,327
+R0494,Urban Corner 494,Hyderabad,Pizza,4.1,68,778,7.4,26,27,0.95,0.77,Premium,6,1039
+R0495,Big Point 495,Pune,Biryani,4.1,1528,480,4.7,10,17,0.93,0.91,Mid-Range,6,42
+R0496,Fusion Plate 496,Chennai,Desserts,3.5,274,484,6.6,16,22,0.76,0.97,Mid-Range,5,487
+R0497,New Grill 497,Kolkata,Continental,4.5,532,338,3.5,12,17,0.84,0.89,Mid-Range,13,1661
+R0498,Blue Diner 498,Jaipur,Thai,4.5,292,296,6.9,26,20,0.9,0.94,Mid-Range,13,208
+R0499,Grand Plate 499,Ahmedabad,Korean,3.8,206,400,1.4,25,12,0.8,0.79,Mid-Range,2,44
+R0500,Blue Kitchen 500,Lucknow,Street Food,4.5,750,283,1.0,21,13,0.88,0.83,Mid-Range,8,240

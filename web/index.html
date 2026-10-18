@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zomato PM Case Study: Too Maaa Zooo — An intent-based food discovery experience. Product Management portfolio project by an IIT Ropar student.">
+  <title>Too Maaa Zooo — Zomato PM Case Study</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav" id="main-nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">Too Maaa <span>Zooo</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a class="nav-link active" data-section="hero">Overview</a></li>
+        <li><a class="nav-link" data-section="funnel">The Drop-Off</a></li>
+        <li><a class="nav-link" data-section="sql-analysis">SQL Analysis</a></li>
+        <li><a class="nav-link" data-section="data-section">Growth Engine</a></li>
+        <li><a class="nav-link" data-section="solution">Too Maaa Zooo</a></li>
+        <li><a class="nav-link" data-section="algorithm">Algorithm</a></li>
+        <li><a class="nav-link" data-section="economics">Economics</a></li>
+        <li><a class="nav-link" data-section="experiment">Validation</a></li>
+        <li><a class="nav-link" data-section="internal-data">Data & Sources</a></li>
+      </ul>
+      <button class="nav-mobile-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO / EXECUTIVE SUMMARY ===================== -->
+  <section class="section hero" id="hero">
+    <div class="container">
+      <div class="hero-badge">
+        <span>📋</span> Product Management Case Study — Zomato / Eternal
+      </div>
+      <h1 class="hero-title">
+        <span class="line">Food delivery doesn't have</span>
+        <span class="line">a selection problem.</span>
+        <span class="line accent">It has a decision problem.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Too Maaa Zooo converts vague food intent into a small set of personalized, 
+        context-aware restaurant recommendations — increasing profitable order frequency 
+        without relying primarily on discounts.
+      </p>
+      
+      <div class="mt-xl" style="display: flex; gap: var(--space-md); flex-wrap: wrap;">
+        <a href="#tmz-demo" class="btn btn-primary">✨ Try Too Maaa Zooo</a>
+        <a href="#algorithm" class="btn btn-ghost">⚙️ Break The Algorithm</a>
+        <a href="#economics" class="btn btn-ghost">💰 Does it actually make money?</a>
+      </div>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Problem</span>
+          <span class="hero-meta-value">Discovery friction & choice overload</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Target Segment</span>
+          <span class="hero-meta-value">Occasional users (1.8 orders/mo)</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">North Star</span>
+          <span class="hero-meta-value">Orders per MTU</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Approach</span>
+          <span class="hero-meta-value">Intent → Personalized ranking</span>
+        </div>
+      </div>
+      <div class="mt-xl">
+        <div class="disclaimer">
+          <span class="disclaimer-icon">⚠️</span>
+          <span>This case study uses publicly available Zomato/Eternal data, industry research, and clearly labeled synthetic data. 
+          No Zomato internal data was accessed or fabricated. All financial assumptions are illustrative.</span>
+        </div>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="grid-4 mt-2xl" id="hero-stats">
+        <div class="stat-card fade-in">
+          <div class="stat-value">22.9M</div>
+          <div class="stat-label">Monthly Transacting Users</div>
+          <div class="stat-change"><span class="source-badge source-public">Public Data</span></div>
+        </div>
+        <div class="stat-card fade-in stagger-1">
+          <div class="stat-value">56-57%</div>
+          <div class="stat-label">Food Delivery Market Share</div>
+          <div class="stat-change"><span class="source-badge source-industry">Industry Research</span></div>
+        </div>
+        <div class="stat-card fade-in stagger-2">
+          <div class="stat-value">₹10.8K Cr</div>
+          <div class="stat-label">Q1 FY26 Food GOV</div>
+          <div class="stat-change"><span class="source-badge source-public">Public Data</span></div>
+        </div>
+        <div class="stat-card fade-in stagger-3">
+          <div class="stat-value">~6-7%</div>
+          <div class="stat-label">Contribution Margin/Order</div>
+          <div class="stat-change"><span class="source-badge source-industry">Industry Research</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ===================== PRODUCT FUNNEL ===================== -->
+  <section class="section" id="funnel">
+    <div class="container">
+      <div class="section-label">THE DROP-OFF</div>
+      <h2>100K Opens, Only 15K Orders. <span style="font-size:var(--text-base);font-weight:400;color:var(--text-tertiary);">(Illustrative)</span></h2>
+      <p class="section-subtitle">
+        From 100K app opens, only 15K become successful orders — a 15% conversion rate.
+        The biggest drops happen in discovery and checkout.
+      </p>
+      <div class="disclaimer mt-md mb-xl">
+        <span class="disclaimer-icon">⚠️</span>
+        <span>Synthetic dataset created for portfolio analysis. It does not represent Zomato's internal data.</span>
+      </div>
+      <div class="grid-2">
+        <div>
+          <div id="funnel-visual" class="funnel"></div>
+        </div>
+        <div>
+          <div class="chart-container">
+            <div class="chart-title">Funnel Drop-Off Analysis</div>
+            <div class="chart-subtitle">Percentage of users retained at each stage</div>
+            <canvas id="funnel-chart" class="chart-canvas"></canvas>
+            <div class="chart-insight">
+              <strong>Key Insight:</strong> The largest drop-offs occur between App Open → Discovery (22%) 
+              and Restaurant View → Menu View (14pp). Discovery friction is the single largest conversion barrier.
+            </div>
+          </div>
+
+          <!-- North Star Analysis -->
+          <div class="card mt-xl">
+            <div class="card-header">
+              <h4>North Star Metric Analysis</h4>
+              <span class="tag tag-red">Critical Decision</span>
+            </div>
+            <p class="card-description mb-md">
+              <strong>Proposed North Star:</strong> "Successful food orders per monthly transacting customer"
+            </p>
+            <div class="table-wrapper">
+              <table id="northstar-table"></table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SQL PRODUCT ANALYTICS ===================== -->
+  <section class="section" id="sql-analysis">
+    <div class="container">
+      <div class="section-label">INVESTIGATING THE DATA</div>
+      <h2>SQL Analysis: Why Discovery Friction?</h2>
+      <p class="section-subtitle mb-md">
+        10 product analytics queries against the synthetic dataset (5K users, 50K orders, 100K sessions). 
+        Each query answers a specific product question that builds toward the Too Maaa Zooo hypothesis.
+      </p>
+      <div class="disclaimer mb-xl">
+        <span class="disclaimer-icon">⚠️</span>
+        <span>Synthetic SQL Analysis — Portfolio Dataset. All queries run against generated data. Results do not represent Zomato's internal metrics.</span>
+      </div>
+
+      <!-- Narrative Flow -->
+      <div class="sql-narrative-flow mb-2xl">
+        <div class="sql-narrative-step">
+          <div class="sql-narrative-icon">👁</div>
+          <div class="sql-narrative-label">OBSERVED</div>
+          <div class="sql-narrative-text">Users face a large choice set during discovery</div>
+        </div>
+        <div class="sql-narrative-arrow">→</div>
+        <div class="sql-narrative-step active">
+          <div class="sql-narrative-icon">🔍</div>
+          <div class="sql-narrative-label">INVESTIGATED</div>
+          <div class="sql-narrative-text">SQL funnel & behavioral analysis</div>
+        </div>
+        <div class="sql-narrative-arrow">→</div>
+        <div class="sql-narrative-step">
+          <div class="sql-narrative-icon">📊</div>
+          <div class="sql-narrative-label">FOUND</div>
+          <div class="sql-narrative-text">Discovery-stage drop-offs & browsing friction</div>
+        </div>
+        <div class="sql-narrative-arrow">→</div>
+        <div class="sql-narrative-step">
+          <div class="sql-narrative-icon">💡</div>
+          <div class="sql-narrative-label">SOLUTION</div>
+          <div class="sql-narrative-text">Too Maaa Zooo</div>
+        </div>
+      </div>
+
+      <!-- Query Cards -->
+      <div id="sql-query-cards"></div>
+    </div>
+  </section>
+
+  <!-- ===================== PROBLEM DISCOVERY ===================== -->
+  <section class="section" id="problem">
+    <div class="container">
+      <div class="section-label">THE PROBLEM</div>
+      <h2>"What Should I Eat?"<br>That's The Problem.</h2>
+      <p class="headline-insight">
+        "More restaurants can create more friction."
+      </p>
+      <p class="section-subtitle mb-xl">
+        A hypothesis tree exploring 9 potential causes of low food-order frequency. 
+        Each hypothesis is evaluated for evidence, confidence, and data requirements.
+      </p>
+      <div class="grid-2" id="hypothesis-grid"></div>
+    </div>
+  </section>
+
+
+  <!-- ===================== DATA ANALYSIS ===================== -->
+  <section class="section" id="data-section">
+    <div class="container">
+      <div class="section-label">THE GROWTH ENGINE</div>
+      <h2>Why Occasional Users Are the Key</h2>
+      <p class="section-subtitle mb-md">
+        Analysis of synthetic behavioral data across 50K+ orders, 5K+ users, and 500+ restaurants.
+      </p>
+      <div class="disclaimer mb-xl">
+        <span class="disclaimer-icon">⚠️</span>
+        <span>Synthetic dataset created for portfolio analysis. It does not represent Zomato's internal data. All charts reflect modeled distributions.</span>
+      </div>
+      <div class="grid-2" id="analysis-charts">
+        <div class="chart-container">
+          <div class="chart-title">Order Frequency Distribution</div>
+          <div class="chart-subtitle">Orders per user per month across segments</div>
+          <canvas id="freq-chart" class="chart-canvas"></canvas>
+          <div class="chart-insight"><strong>Insight:</strong> The "Occasional" segment has the widest frequency distribution and the most headroom for growth.</div>
+        </div>
+        <div class="chart-container">
+          <div class="chart-title">Contribution Margin by Segment</div>
+          <div class="chart-subtitle">Per-order contribution (₹) — Illustrative assumption</div>
+          <canvas id="contribution-chart" class="chart-canvas"></canvas>
+          <div class="chart-insight"><strong>Insight:</strong> Discount-driven users generate only ₹18/order vs ₹95 for premium users. Growing frequency in the occasional segment (₹55/order) is more sustainable than driving discount-driven volume.</div>
+        </div>
+        <div class="chart-container">
+          <div class="chart-title">Rating vs Repeat Order Probability</div>
+          <div class="chart-subtitle">Synthetic correlation — does not imply causation</div>
+          <canvas id="rating-repeat-chart" class="chart-canvas"></canvas>
+          <div class="chart-insight"><strong>Insight:</strong> Orders rated 4.5+ have nearly 2x the repeat probability of orders rated below 3.5. Quality drives retention, not just discounts.</div>
+        </div>
+        <div class="chart-container">
+          <div class="chart-title">Discount Dependency vs Retention</div>
+          <div class="chart-subtitle">30-day retention by discount dependency level</div>
+          <canvas id="discount-retention-chart" class="chart-canvas"></canvas>
+          <div class="chart-insight"><strong>Insight:</strong> High discount-dependency correlates with lower retention — users trained on discounts leave when discounts stop. Correlation, not causation.</div>
+        </div>
+      </div>
+
+      <!-- Segment Analysis -->
+      <h3 class="mt-2xl mb-lg">Targeting Occasional Users</h3>
+      <p class="headline-insight">
+        "The goal isn't more clicks. It's more profitable completed orders."
+      </p>
+      <div class="disclaimer mb-xl">
+        <span class="disclaimer-icon">⚠️</span>
+        <span>Synthetic dataset created for portfolio analysis. Segment distributions are illustrative.</span>
+      </div>
+      <div class="grid-3 mb-xl" id="segment-cards"></div>
+      <div class="table-wrapper mb-xl">
+        <table id="segment-table"></table>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h4>Why Target Occasional Users?</h4>
+          <span class="tag tag-blue">Strategic Decision</span>
+        </div>
+        <div class="grid-3 mt-md">
+          <div>
+            <div class="card-metric">36%</div>
+            <div class="card-metric-label">of total user base</div>
+            <p class="card-description mt-sm">Largest addressable segment with proven platform engagement</p>
+          </div>
+          <div>
+            <div class="card-metric">1.8→2.0</div>
+            <div class="card-metric-label">orders/month target</div>
+            <p class="card-description mt-sm">Modest, realistic frequency lift — only +0.2 orders/month</p>
+          </div>
+          <div>
+            <div class="card-metric">₹55</div>
+            <div class="card-metric-label">contribution/order</div>
+            <p class="card-description mt-sm">Healthy unit economics — not dependent on discounts</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOLUTION: TOO MAAA ZOOO ===================== -->
+  <section class="section" id="solution">
+    <div class="container">
+      <div class="section-label">THE SOLUTION</div>
+      <h2 style="font-size: var(--text-5xl); letter-spacing: -0.03em;">
+        <span class="text-accent">TOO</span> MAAA <span class="text-accent">ZOOO</span>
+      </h2>
+      <p class="section-subtitle mb-xl" style="max-width: 600px;">
+        "You don't need to know what you want. We do."
+      </p>
+      
+      <!-- Product Flow -->
+      <div class="flow mb-2xl">
+        <div class="flow-node">📱 Open Zomato</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-node highlight">✨ Too Maaa Zooo</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-node">"What are you feeling?"</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-node">🎯 Select intent + constraints</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-node">🤖 Personalized recommendations</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-node">💡 Understand WHY</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-node">🛒 Order</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-node">⭐ Rate → Feedback improves future</div>
+      </div>
+
+      <!-- PRD Summary -->
+      <div class="grid-2">
+        <div class="card">
+          <h4>Core Promise</h4>
+          <p class="card-description">"Tell us what you're craving. We'll figure out what you should eat."</p>
+          <div class="section-divider"></div>
+          <h4>How It Works</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 8px 0; color: var(--text-secondary); font-size: var(--text-sm);">
+              <span class="text-accent font-bold">1.</span> User selects a mood/intent (11 options)
+            </li>
+            <li style="padding: 8px 0; color: var(--text-secondary); font-size: var(--text-sm);">
+              <span class="text-accent font-bold">2.</span> Optionally fine-tunes with budget, cuisine, ETA, diet, distance
+            </li>
+            <li style="padding: 8px 0; color: var(--text-secondary); font-size: var(--text-sm);">
+              <span class="text-accent font-bold">3.</span> Recommendation engine generates personalized results
+            </li>
+            <li style="padding: 8px 0; color: var(--text-secondary); font-size: var(--text-sm);">
+              <span class="text-accent font-bold">4.</span> Each result explains WHY it was recommended
+            </li>
+            <li style="padding: 8px 0; color: var(--text-secondary); font-size: var(--text-sm);">
+              <span class="text-accent font-bold">5.</span> User feedback improves future recommendations
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Edge Cases Handled</h4>
+          <div style="display: flex; flex-direction: column; gap: var(--space-md);">
+            <div>
+              <span class="tag tag-blue mb-sm">New User</span>
+              <p class="card-description">No history → Use location, popular restaurants, stated preferences, context</p>
+            </div>
+            <div>
+              <span class="tag tag-green mb-sm">New Restaurant</span>
+              <p class="card-description">No order data → Use quality, availability, cuisine match, exploration slots</p>
+            </div>
+            <div>
+              <span class="tag tag-purple mb-sm">No Preference</span>
+              <p class="card-description">Everything neutral → Use contextual signals (time, location, trending)</p>
+            </div>
+            <div>
+              <span class="tag tag-gold mb-sm">Wants Something New</span>
+              <p class="card-description">Exploration mode → Increase novelty weight, suppress frequently ordered</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TMZ INTERACTIVE DEMO ===================== -->
+  <section class="section" id="tmz-demo">
+    <div class="container">
+      <div class="section-label">THE PROTOTYPE</div>
+      <h2 style="font-size: var(--text-5xl); letter-spacing: -0.03em; text-align: center;">
+        <span class="text-accent">TOO</span> MAAA <span class="text-accent">ZOOO</span>
+      </h2>
+      <p style="text-align: center; color: var(--text-secondary); font-size: var(--text-xl); margin-bottom: var(--space-sm);">
+        What are you craving?
+      </p>
+      <p style="text-align: center; margin-bottom: var(--space-2xl);">
+        <span class="synthetic-label">Interactive Prototype — Synthetic Data</span>
+      </p>
+
+      <!-- User Profile Simulator -->
+      <div class="card mb-xl">
+        <div class="flex-between mb-md">
+          <h4 style="margin-bottom:0;">Simulate a User</h4>
+          <span class="tag">Personalization Demo</span>
+        </div>
+        <div class="grid-3" id="profile-selector" style="grid-template-columns: repeat(6, 1fr);"></div>
+      </div>
+
+      <!-- Mood Selection -->
+      <h4 class="mb-md">How are you feeling?</h4>
+      <div class="chip-group mb-xl" id="mood-chips"></div>
+
+      <!-- Fine-tune -->
+      <h4 class="mb-md">Fine-tune your craving</h4>
+      <div class="grid-3 mb-xl">
+        <div class="card card-compact">
+          <div class="card-title" style="font-size: var(--text-sm);">💰 Budget</div>
+          <div class="chip-group mt-sm" id="budget-chips"></div>
+        </div>
+        <div class="card card-compact">
+          <div class="card-title" style="font-size: var(--text-sm);">🍽️ Cuisine</div>
+          <div class="chip-group mt-sm" id="cuisine-chips"></div>
+        </div>
+        <div class="card card-compact">
+          <div class="card-title" style="font-size: var(--text-sm);">⏱️ Max ETA</div>
+          <div class="chip-group mt-sm" id="eta-chips"></div>
+        </div>
+      </div>
+      <div class="grid-3 mb-xl">
+        <div class="card card-compact">
+          <div class="card-title" style="font-size: var(--text-sm);">🥬 Dietary</div>
+          <div class="chip-group mt-sm" id="diet-chips"></div>
+        </div>
+        <div class="card card-compact">
+          <div class="card-title" style="font-size: var(--text-sm);">📍 Distance</div>
+          <div class="chip-group mt-sm" id="distance-chips"></div>
+        </div>
+        <div class="card card-compact">
+          <div class="card-title" style="font-size: var(--text-sm);">🧭 Discovery Mode</div>
+          <div class="chip-group mt-sm" id="discovery-chips"></div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div style="text-align: center; margin-bottom: var(--space-2xl);">
+        <button class="btn btn-primary btn-lg" id="show-recommendations" style="padding: 16px 48px; font-size: var(--text-lg);">
+          ✨ Show me my food
+        </button>
+      </div>
+
+      <!-- Algorithm Toggle -->
+      <div class="flex-between mb-lg">
+        <h3 id="results-title" style="margin-bottom:0;">Tonight's Picks</h3>
+        <div class="toggle-switch" id="algo-toggle">
+          <div class="toggle-track" id="algo-toggle-track">
+            <div class="toggle-thumb"></div>
+          </div>
+          <span class="toggle-label">Show Algorithm</span>
+        </div>
+      </div>
+
+      <!-- Recommendation Results -->
+      <div id="recommendation-results"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ALGORITHM PLAYGROUND ===================== -->
+  <section class="section" id="algorithm">
+    <div class="container">
+      <div class="section-label">UNDER THE HOOD</div>
+      <h2>The Recommendation Engine</h2>
+      <p class="section-subtitle mb-xl">
+        Modify the recommendation weights and watch restaurants rerank in real-time.
+        The algorithm uses 7 scoring dimensions — adjust any weight to see its impact.
+      </p>
+      
+      <div class="grid-2">
+        <!-- Weight Sliders & Edge Cases -->
+        <div>
+          <div class="card mb-md">
+            <h4>Scoring Weights</h4>
+            <p class="card-description mb-lg">Drag sliders to change weights. Total should sum to ~100%.</p>
+            <div id="weight-sliders"></div>
+            <div class="mt-lg" style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="text-secondary" style="font-size: var(--text-sm);">Total: <strong id="weight-total">100%</strong></span>
+              <button class="btn btn-ghost btn-sm" id="reset-weights">Reset Defaults</button>
+            </div>
+          </div>
+          
+          <div class="card">
+            <h4>Algorithm Edge Cases</h4>
+            <p class="card-description mb-md">Simulate specific user or restaurant scenarios.</p>
+            <div id="edge-case-toggles">
+              <div class="chip" data-edge="new-user" onclick="toggleEdgeCase('new-user', this)">🆕 New User (Cold Start)</div>
+              <div class="chip" data-edge="new-restaurant" onclick="toggleEdgeCase('new-restaurant', this)">🏪 New Restaurant Boost</div>
+              <div class="chip" data-edge="bad-delivery" onclick="toggleEdgeCase('bad-delivery', this)">🌧 Bad Weather (ETA Focus)</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Before/After -->
+        <div>
+          <div class="card mb-md">
+            <h4>Top 5 Restaurants — Before</h4>
+            <div id="algo-before"></div>
+          </div>
+          <div class="card" style="border-color: var(--accent-primary);">
+            <h4 class="text-accent">Top 5 Restaurants — After</h4>
+            <div id="algo-after"></div>
+          </div>
+          <div class="card mt-md" id="algo-explanation" style="border-left: 3px solid var(--accent-primary);">
+            <h4 style="font-size: var(--text-sm);">What Changed?</h4>
+            <p class="card-description" id="algo-explanation-text">Adjust weights above to see how rankings change.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fairness -->
+      <div class="card mt-2xl">
+        <h4>Algorithm Fairness & Diversity</h4>
+        <div class="grid-3 mt-md">
+          <div>
+            <span class="tag tag-red mb-sm">Diversity Constraint</span>
+            <p class="card-description">Top 5 results cannot all be the same cuisine, restaurant chain, or price segment. This prevents filter bubbles and ensures restaurant fairness.</p>
+          </div>
+          <div>
+            <span class="tag tag-blue mb-sm">Exploration Slots</span>
+            <p class="card-description">10-15% of recommendation slots are reserved for new or underrepresented restaurants, preventing popularity bias and enabling restaurant discovery.</p>
+          </div>
+          <div>
+            <span class="tag tag-gold mb-sm">Feedback Loop Prevention</span>
+            <p class="card-description">Exposure caps limit maximum impressions per restaurant. We monitor HHI (Herfindahl-Hirschman Index) of order concentration as a guardrail metric.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== A/B EXPERIMENT ===================== -->
+  <section class="section" id="experiment">
+    <div class="container">
+      <div class="section-label">VALIDATION</div>
+      <h2>Proving the Hypothesis: A/B Testing</h2>
+      <p class="headline-insight">
+        "An incremental order is valuable only when it is truly incremental."
+      </p>
+      
+      <div class="grid-2 mb-xl">
+        <div class="card">
+          <div class="flex-between mb-md">
+            <h4 style="margin-bottom:0;">Control</h4>
+            <span class="tag">50%</span>
+          </div>
+          <p class="card-description">Current Zomato discovery experience. No changes to home screen, search, or restaurant listing.</p>
+        </div>
+        <div class="card" style="border-color: var(--accent-primary);">
+          <div class="flex-between mb-md">
+            <h4 style="margin-bottom:0;" class="text-accent">Treatment</h4>
+            <span class="tag tag-red">50%</span>
+          </div>
+          <p class="card-description">Current discovery experience + Too Maaa Zooo intent-based recommendations. TMZ appears as an additional entry point on home screen.</p>
+        </div>
+      </div>
+
+      <!-- Metrics -->
+      <div class="grid-3 mb-xl">
+        <div class="card">
+          <h4>Primary Metric</h4>
+          <p class="card-description text-accent font-semibold">Incremental successful orders per eligible user per month</p>
+        </div>
+        <div class="card">
+          <h4>Secondary Metrics</h4>
+          <div id="secondary-metrics" style="font-size: var(--text-xs);"></div>
+        </div>
+        <div class="card">
+          <h4>Guardrail Metrics</h4>
+          <div id="guardrail-metrics" style="font-size: var(--text-xs);"></div>
+        </div>
+      </div>
+
+      <!-- Experiment Design -->
+      <div class="card mb-xl">
+        <h4>Experiment Design Parameters</h4>
+        <div class="table-wrapper mt-md">
+          <table id="experiment-table"></table>
+        </div>
+      </div>
+
+      <!-- Experiment Simulator -->
+      <div class="card">
+        <div class="flex-between mb-md">
+          <h4 style="margin-bottom:0;">Experiment Simulator</h4>
+          <span class="assumption-label">Illustrative experiment simulator</span>
+        </div>
+        <div class="grid-2 mt-md">
+          <div>
+            <div class="slider-group mb-lg">
+              <div class="slider-header">
+                <span class="slider-label">Control Conversion Rate</span>
+                <span class="slider-value" id="exp-control-val">15.0%</span>
+              </div>
+              <input type="range" id="exp-control" min="5" max="30" value="15" step="0.5">
+            </div>
+            <div class="slider-group mb-lg">
+              <div class="slider-header">
+                <span class="slider-label">Treatment Conversion Rate</span>
+                <span class="slider-value" id="exp-treatment-val">16.5%</span>
+              </div>
+              <input type="range" id="exp-treatment" min="5" max="30" value="16.5" step="0.5">
+            </div>
+            <div class="slider-group mb-lg">
+              <div class="slider-header">
+                <span class="slider-label">Sample Size (per arm)</span>
+                <span class="slider-value" id="exp-sample-val">50,000</span>
+              </div>
+              <input type="range" id="exp-sample" min="10000" max="200000" value="50000" step="5000">
+            </div>
+          </div>
+          <div class="card" style="background: var(--bg-tertiary);">
+            <div class="grid-2 gap-md">
+              <div class="stat-card" style="background: var(--bg-card);">
+                <div class="stat-value" id="exp-lift">+10.0%</div>
+                <div class="stat-label">Relative Lift</div>
+              </div>
+              <div class="stat-card" style="background: var(--bg-card);">
+                <div class="stat-value" id="exp-sig">Yes</div>
+                <div class="stat-label">Statistically Significant</div>
+              </div>
+              <div class="stat-card" style="background: var(--bg-card);">
+                <div class="stat-value" id="exp-ci">±1.2%</div>
+                <div class="stat-label">95% Confidence Interval</div>
+              </div>
+              <div class="stat-card" style="background: var(--bg-card);">
+                <div class="stat-value" id="exp-incremental">750</div>
+                <div class="stat-label">Est. Incremental Orders</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== UNIT ECONOMICS ===================== -->
+  <section class="section" id="economics">
+    <div class="container">
+      <div class="section-label">PROFITABILITY</div>
+      <h2>Will This Make Money?</h2>
+      <p class="headline-insight">
+        "Personalization should reduce decision time, not just increase engagement."
+      </p>
+      <div class="disclaimer mb-xl">
+        <span class="disclaimer-icon">⚠️</span>
+        <span>All financial figures below are illustrative assumptions. They do not represent Zomato's actual internal economics.</span>
+      </div>
+      
+      <!-- Per Order Economics -->
+      <div class="grid-2 mb-xl">
+        <div class="chart-container">
+          <div class="chart-title">Revenue per Order</div>
+          <div class="chart-subtitle">Revenue breakdown — Illustrative assumption</div>
+          <canvas id="revenue-chart" class="chart-canvas"></canvas>
+        </div>
+        <div class="chart-container">
+          <div class="chart-title">Cost per Order</div>
+          <div class="chart-subtitle">Variable cost breakdown — Illustrative assumption</div>
+          <canvas id="cost-chart" class="chart-canvas"></canvas>
+        </div>
+      </div>
+
+      <!-- Contribution Summary -->
+      <div class="grid-4 mb-xl" id="econ-summary"></div>
+
+      <!-- Interactive Calculator -->
+      <div class="card mb-xl">
+        <div class="flex-between mb-lg">
+          <h4 style="margin-bottom:0;">Interactive Business Impact Calculator</h4>
+          <span class="assumption-label">Illustrative scenario</span>
+        </div>
+        <div class="grid-2">
+          <div>
+            <div class="slider-group mb-md">
+              <div class="slider-header">
+                <span class="slider-label">Eligible Users</span>
+                <span class="slider-value" id="calc-users-val">5,000,000</span>
+              </div>
+              <input type="range" id="calc-users" min="1000000" max="15000000" value="5000000" step="500000">
+            </div>
+            <div class="slider-group mb-md">
+              <div class="slider-header">
+                <span class="slider-label">Current Orders/User/Month</span>
+                <span class="slider-value" id="calc-freq-val">1.8</span>
+              </div>
+              <input type="range" id="calc-freq" min="0.5" max="5" value="1.8" step="0.1">
+            </div>
+            <div class="slider-group mb-md">
+              <div class="slider-header">
+                <span class="slider-label">New Orders/User/Month</span>
+                <span class="slider-value" id="calc-newfreq-val">2.0</span>
+              </div>
+              <input type="range" id="calc-newfreq" min="0.5" max="6" value="2.0" step="0.1">
+            </div>
+            <div class="slider-group mb-md">
+              <div class="slider-header">
+                <span class="slider-label">Average Order Value (₹)</span>
+                <span class="slider-value" id="calc-aov-val">₹380</span>
+              </div>
+              <input type="range" id="calc-aov" min="150" max="800" value="380" step="10">
+            </div>
+            <div class="slider-group mb-md">
+              <div class="slider-header">
+                <span class="slider-label">Contribution per Order (₹)</span>
+                <span class="slider-value" id="calc-contrib-val">₹55</span>
+              </div>
+              <input type="range" id="calc-contrib" min="10" max="120" value="55" step="5">
+            </div>
+            <div class="slider-group mb-md">
+              <div class="slider-header">
+                <span class="slider-label">Cannibalization Rate</span>
+                <span class="slider-value" id="calc-cannibal-val">25%</span>
+              </div>
+              <input type="range" id="calc-cannibal" min="0" max="50" value="25" step="5">
+            </div>
+          </div>
+          <div>
+            <div class="grid-2 gap-md" id="calc-outputs"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cannibalization Visualization -->
+      <div class="card">
+        <h4>Cannibalization Analysis</h4>
+        <p class="card-description mb-lg">This visualization shows the difference between gross order lift and true incremental impact after accounting for cannibalization.</p>
+        <canvas id="cannibalization-chart" class="chart-canvas" style="max-height: 300px;"></canvas>
+        <div class="chart-insight mt-md">
+          <strong>Business Implication:</strong> Not all new orders from TMZ are truly incremental. Some would have occurred through existing discovery paths. 
+          Adjusting the cannibalization slider above shows how the business case changes.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BUSINESS IMPACT ===================== -->
+  <section class="section" id="impact">
+    <div class="container">
+      <div class="section-label">THE CANNIBALIZATION CHALLENGE</div>
+      <h2>True Incremental Impact</h2>
+      <div class="disclaimer mb-xl">
+        <span class="disclaimer-icon">⚠️</span>
+        <span>All impact estimates below are scenario projections based on illustrative assumptions. They do not represent Zomato's actual performance or projections.</span>
+      </div>
+      
+      <div class="scenario-tabs mb-xl" id="scenario-tabs">
+        <button class="scenario-tab" data-scenario="conservative">Conservative</button>
+        <button class="scenario-tab active" data-scenario="base">Base</button>
+        <button class="scenario-tab" data-scenario="upside">Upside</button>
+      </div>
+
+      <div class="grid-4 mb-xl" id="scenario-stats"></div>
+      
+      <div class="chart-container">
+        <div class="chart-title">Annual Impact by Scenario</div>
+        <div class="chart-subtitle">Scenario estimate — Illustrative projections</div>
+        <canvas id="scenario-chart" class="chart-canvas"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ROADMAP ===================== -->
+  <section class="section" id="roadmap-section">
+    <div class="container">
+      <div class="section-label">EXECUTION</div>
+      <h2>Building the Future</h2>
+      <p class="section-subtitle mb-xl">
+        6 phases from instrumentation to predictive food intent. Each phase builds on the previous,
+        with clear success metrics gating progression.
+      </p>
+      <div class="roadmap" id="roadmap-timeline"></div>
+    </div>
+  </section>
+
+  <!-- ===================== RISKS ===================== -->
+  <section class="section" id="risks-section">
+    <div class="container">
+      <div class="section-label">WHAT IF WE'RE WRONG?</div>
+      <h2>Risks & Mitigations</h2>
+      <p class="section-subtitle mb-xl">
+        11 identified risks across personalization, fairness, business impact, and operations.
+      </p>
+      <div id="risks-list"></div>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL DECISION ===================== -->
+  <section class="section" id="final-decision">
+    <div class="container">
+      <div class="section-label">THE VERDICT</div>
+      <h2>Launch, Iterate, or Kill?</h2>
+      <p class="section-subtitle mb-xl">
+        Explicit thresholds based on experiment results and business metrics.
+      </p>
+      <div class="grid-3" id="decision-thresholds">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INTERNAL DATA & SOURCES ===================== -->
+  <section class="section" id="internal-data">
+    <div class="container">
+      <div class="section-label">DATA & SOURCES</div>
+      <h2>Internal Data & Methodology</h2>
+      <p class="section-subtitle mb-xl">
+        What data I would request after joining Zomato, and the sources used for this case study.
+      </p>
+      
+      <div class="accordion-item">
+        <button class="accordion-trigger" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('visible');">
+          <div style="display:flex;align-items:center;gap:var(--space-md);">
+            <span style="font-weight:600;font-size:var(--text-lg);">Internal Data Wishlist</span>
+          </div>
+          <span class="arrow">▸</span>
+        </button>
+        <div class="accordion-content">
+          <div class="accordion-content-inner" id="data-wishlist">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+      </div>
+      
+      <div class="accordion-item mt-md">
+        <button class="accordion-trigger" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('visible');">
+          <div style="display:flex;align-items:center;gap:var(--space-md);">
+            <span style="font-weight:600;font-size:var(--text-lg);">Sources & Methodology</span>
+          </div>
+          <span class="arrow">▸</span>
+        </button>
+        <div class="accordion-content">
+          <div class="accordion-content-inner">
+            <div id="sources-list"></div>
+            <!-- Data Integrity Framework -->
+            <div class="card mt-2xl">
+              <h4>Data Integrity Framework</h4>
+              <div class="grid-3 mt-md">
+                <div>
+                  <span class="source-badge source-public mb-sm" style="display: inline-flex;">Public Data</span>
+                  <p class="card-description">Verified from official company filings, investor presentations, and exchange disclosures</p>
+                </div>
+                <div>
+                  <span class="source-badge source-industry mb-sm" style="display: inline-flex;">Industry Research</span>
+                  <p class="card-description">From reputable financial publications and credible industry research reports</p>
+                </div>
+                <div>
+                  <span class="source-badge source-observable mb-sm" style="display: inline-flex;">Observable</span>
+                  <p class="card-description">Publicly observable product behavior (pricing, features, UI)</p>
+                </div>
+                <div>
+                  <span class="source-badge source-assumption mb-sm" style="display: inline-flex;">Assumption</span>
+                  <p class="card-description">Explicitly labeled illustrative assumptions for modeling</p>
+                </div>
+                <div>
+                  <span class="source-badge source-synthetic mb-sm" style="display: inline-flex;">Synthetic</span>
+                  <p class="card-description">Generated datasets for analysis — does not represent Zomato internal data</p>
+                </div>
+                <div>
+                  <span class="source-badge source-scenario mb-sm" style="display: inline-flex;">Scenario</span>
+                  <p class="card-description">Calculated projections based on illustrative inputs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer style="padding: var(--space-3xl) 0; border-top: 1px solid var(--border-subtle); text-align: center;">
+    <div class="container">
+      <p style="font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 700; margin-bottom: var(--space-md);">
+        <span class="text-accent">TOO</span> MAAA <span class="text-accent">ZOOO</span>
+      </p>
+      <p style="color: var(--text-tertiary); font-size: var(--text-sm); margin-bottom: var(--space-md);">
+        A Product Management Case Study for Zomato / Eternal
+      </p>
+      <p style="color: var(--text-muted); font-size: var(--text-xs);">
+        Built by an IIT Ropar student · Synthetic data · Not affiliated with Zomato/Eternal
+      </p>
+      <div style="margin-top: var(--space-lg); display: flex; gap: var(--space-md); justify-content: center;">
+        <a href="https://github.com" class="btn btn-ghost btn-sm" target="_blank">GitHub Repository</a>
+        <a href="#hero" class="btn btn-ghost btn-sm">Back to Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="sql-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
